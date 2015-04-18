@@ -1697,6 +1697,152 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
+<library name="connector">
+<description>&lt;b&gt;LAB11&lt;/b&gt; - Connectors for various cable types.</description>
+<packages>
+<package name="TC2030-IDC">
+<description>Tag Connect TC2030-IDC</description>
+<smd name="1" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<hole x="-2.54" y="2.54" drill="2.3749"/>
+<smd name="3" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="2" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<hole x="0.635" y="2.54" drill="2.3749"/>
+<hole x="0.635" y="-2.54" drill="2.3749"/>
+<hole x="-2.54" y="-2.54" drill="2.3749"/>
+<hole x="-2.54" y="0" drill="1.016"/>
+<hole x="2.54" y="1.016" drill="1.016"/>
+<hole x="2.54" y="-1.016" drill="1.016"/>
+<polygon width="0.127" layer="42">
+<vertex x="-3.175" y="-3.81"/>
+<vertex x="-1.905" y="-3.81"/>
+<vertex x="-1.905" y="-4.7625"/>
+<vertex x="-3.175" y="-4.7625"/>
+</polygon>
+<polygon width="0.127" layer="42">
+<vertex x="0" y="-3.81"/>
+<vertex x="1.27" y="-3.81"/>
+<vertex x="1.27" y="-4.7625"/>
+<vertex x="0" y="-4.7625"/>
+</polygon>
+<polygon width="0.127" layer="42">
+<vertex x="0" y="3.81"/>
+<vertex x="1.27" y="3.81"/>
+<vertex x="1.27" y="4.7625"/>
+<vertex x="0" y="4.7625"/>
+</polygon>
+<polygon width="0.127" layer="42">
+<vertex x="-1.905" y="3.81"/>
+<vertex x="-3.175" y="3.81"/>
+<vertex x="-3.175" y="4.7625"/>
+<vertex x="-1.905" y="4.7625"/>
+</polygon>
+<polygon width="0.127" layer="39">
+<vertex x="-1.27" y="0.635"/>
+<vertex x="1.27" y="0.635"/>
+<vertex x="1.27" y="-0.635"/>
+<vertex x="-1.27" y="-0.635"/>
+</polygon>
+<text x="0" y="5.08" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-6.0325" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center">&gt;VALUE</text>
+<wire x1="-2.54" y1="3.81" x2="2.54" y2="3.81" width="0.127" layer="25"/>
+<wire x1="4.2545" y1="2.0955" x2="4.2545" y2="-2.0955" width="0.127" layer="25"/>
+<wire x1="2.54" y1="-3.81" x2="-2.54" y2="-3.81" width="0.127" layer="25"/>
+<wire x1="-4.2545" y1="-2.0955" x2="-4.2545" y2="2.0955" width="0.127" layer="25"/>
+<wire x1="-2.54" y1="3.81" x2="-4.2545" y2="2.0955" width="0.127" layer="25" curve="90"/>
+<wire x1="4.2545" y1="2.0955" x2="2.54" y2="3.81" width="0.127" layer="25" curve="90"/>
+<wire x1="-4.2545" y1="-2.0955" x2="-2.54" y2="-3.81" width="0.127" layer="25" curve="90"/>
+<wire x1="2.54" y1="-3.81" x2="4.2545" y2="-2.0955" width="0.127" layer="25" curve="90"/>
+<circle x="-1.27" y="-0.635" radius="0.635" width="0.127" layer="21"/>
+</package>
+<package name="TC2030-IDC-NL">
+<description>The TC2030-IDC-NL is our "No Legs" 6-pin Plug-of-Nails Cable</description>
+<smd name="1" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="2" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<hole x="-2.54" y="0" drill="1.016"/>
+<hole x="2.54" y="1.016" drill="1.016"/>
+<hole x="2.54" y="-1.016" drill="1.016"/>
+<polygon width="0.127" layer="39">
+<vertex x="-1.27" y="0.635"/>
+<vertex x="1.27" y="0.635"/>
+<vertex x="1.27" y="-0.635"/>
+<vertex x="-1.27" y="-0.635"/>
+</polygon>
+<text x="0" y="2.54" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.4925" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center">&gt;VALUE</text>
+<circle x="-1.27" y="-0.635" radius="0.635" width="0.127" layer="21"/>
+<wire x1="2.286" y1="-2.0447" x2="-0.979178125" y2="-2.0447" width="0.127" layer="21"/>
+<wire x1="-0.979178125" y1="-2.0447" x2="-1.531840625" y2="-1.91814375" width="0.127" layer="21" curve="-25.795946"/>
+<wire x1="-1.531840625" y1="-1.91814375" x2="-3.19733125" y2="-1.11315625" width="0.127" layer="21"/>
+<wire x1="-3.19733125" y1="-1.11315625" x2="-3.556" y2="-0.541434375" width="0.127" layer="21" curve="-64.204213"/>
+<wire x1="-3.556" y1="-0.541434375" x2="-3.556" y2="0.541434375" width="0.127" layer="21"/>
+<wire x1="-3.556" y1="0.541434375" x2="-3.19733125" y2="1.11315625" width="0.127" layer="21" curve="-64.204054"/>
+<wire x1="-3.19733125" y1="1.11315625" x2="-1.531840625" y2="1.91814375" width="0.127" layer="21"/>
+<wire x1="-1.531840625" y1="1.91814375" x2="-0.979178125" y2="2.0447" width="0.127" layer="21" curve="-25.795871"/>
+<wire x1="-0.979178125" y1="2.0447" x2="2.286" y2="2.0447" width="0.127" layer="21"/>
+<wire x1="2.286" y1="2.0447" x2="3.556" y2="0.7747" width="0.127" layer="21" curve="-90"/>
+<wire x1="3.556" y1="0.7747" x2="3.556" y2="-0.7747" width="0.127" layer="21"/>
+<wire x1="3.556" y1="-0.7747" x2="2.286" y2="-2.0447" width="0.127" layer="21" curve="-90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="JLINK-SWD-TC">
+<pin name="SWDIO" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SWDCLK" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SWO" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="!RESET" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="7.874" size="1.778" layer="95" ratio="12">&gt;NAME</text>
+<text x="-10.16" y="-9.906" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TC2030-JLINK" prefix="J">
+<gates>
+<gate name="G$1" symbol="JLINK-SWD-TC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-L" package="TC2030-IDC">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="3"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="SWDCLK" pad="4"/>
+<connect gate="G$1" pin="SWDIO" pad="2"/>
+<connect gate="G$1" pin="SWO" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-NL" package="TC2030-IDC-NL">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="3"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="SWDCLK" pad="4"/>
+<connect gate="G$1" pin="SWDIO" pad="2"/>
+<connect gate="G$1" pin="SWO" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="AUTHOR" value="Brad Campbell"/>
@@ -1784,6 +1930,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R10" library="passives" deviceset="RESISTOR" device="0402_RES" value="1k"/>
 <part name="R1" library="passives" deviceset="RESISTOR" device="0402_RES" value="10k"/>
 <part name="R2" library="passives" deviceset="RESISTOR" device="0402_RES" value="10k"/>
+<part name="J1" library="connector" deviceset="TC2030-JLINK" device="-NL"/>
+<part name="P+4" library="supply1" deviceset="VCC" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1863,6 +2012,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <attribute name="NAME" x="118.3386" y="158.75" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="118.618" y="163.83" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="J1" gate="G$1" x="208.28" y="154.94"/>
+<instance part="P+4" gate="VCC" x="190.5" y="165.1"/>
+<instance part="GND5" gate="1" x="190.5" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -2018,6 +2170,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="25.4" y1="25.4" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="195.58" y1="149.86" x2="190.5" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="149.86" x2="190.5" y2="147.32" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -2065,6 +2223,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="43.18" y1="127" x2="43.18" y2="129.54" width="0.1524" layer="91"/>
 <junction x="43.18" y="129.54"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="VCC"/>
+<pinref part="P+4" gate="VCC" pin="VCC"/>
+<wire x1="195.58" y1="160.02" x2="190.5" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="160.02" x2="190.5" y2="162.56" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$15" class="0">
 <segment>
@@ -2101,6 +2265,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="15.24" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="SWDCLK"/>
+<wire x1="220.98" y1="157.48" x2="226.06" y2="157.48" width="0.1524" layer="91"/>
+<label x="226.06" y="157.48" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SWDIO/!RESET" class="0">
 <segment>
@@ -2113,6 +2282,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="U5" gate="G$1" pin="SWDIO/!RESET"/>
 <wire x1="30.48" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 <label x="15.24" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="SWDIO"/>
+<wire x1="220.98" y1="160.02" x2="226.06" y2="160.02" width="0.1524" layer="91"/>
+<label x="226.06" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!FRAM_CS" class="0">
