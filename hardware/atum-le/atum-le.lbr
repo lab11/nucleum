@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -178,9 +178,9 @@
 <wire x1="0" y1="8.9789" x2="0" y2="8.081009375" width="0.127" layer="21"/>
 <wire x1="0" y1="-8.9789" x2="0" y2="-8.081009375" width="0.127" layer="21"/>
 <wire x1="-17.5" y1="-8.5" x2="-14" y2="-8.5" width="0.127" layer="51"/>
-<wire x1="-14" y1="-8.5" x2="-14" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-14" y1="-0.5" x2="-17.5" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-17.5" y1="-0.5" x2="-17.5" y2="-8.5" width="0.127" layer="51"/>
+<wire x1="-14" y1="-8.5" x2="-14" y2="-1.28" width="0.127" layer="51"/>
+<wire x1="-14" y1="-1.28" x2="-17.5" y2="-1.28" width="0.127" layer="51"/>
+<wire x1="-17.5" y1="-1.28" x2="-17.5" y2="-8.5" width="0.127" layer="51"/>
 <text x="-15.5" y="-4.5" size="0.762" layer="51" font="vector" ratio="12" rot="R90" align="bottom-center">ANTENNA</text>
 <wire x1="-10" y1="1" x2="-2" y2="1" width="0.127" layer="51"/>
 <wire x1="-10" y1="-7" x2="-10" y2="1" width="0.127" layer="51"/>
@@ -191,9 +191,9 @@
 <wire x1="-6" y1="4" x2="-2" y2="4" width="0.127" layer="51"/>
 <wire x1="-2" y1="4" x2="-2" y2="6.5" width="0.127" layer="51"/>
 <wire x1="-2" y1="6.5" x2="-6" y2="6.5" width="0.127" layer="51"/>
-<wire x1="-14" y1="7.5" x2="-14" y2="2" width="0.127" layer="51"/>
-<wire x1="-14" y1="2" x2="-10" y2="2" width="0.127" layer="51"/>
-<wire x1="-10" y1="2" x2="-10" y2="7.5" width="0.127" layer="51"/>
+<wire x1="-14" y1="7.5" x2="-14" y2="2.78" width="0.127" layer="51"/>
+<wire x1="-14" y1="2.78" x2="-10" y2="2.78" width="0.127" layer="51"/>
+<wire x1="-10" y1="2.78" x2="-10" y2="7.5" width="0.127" layer="51"/>
 <wire x1="-10" y1="7.5" x2="-14" y2="7.5" width="0.127" layer="51"/>
 <wire x1="-17.5" y1="8.5" x2="-15.5" y2="8.5" width="0.127" layer="51"/>
 <wire x1="-15.5" y1="8.5" x2="-15.5" y2="6.5" width="0.127" layer="51"/>
@@ -203,6 +203,10 @@
 <text x="-12" y="5" size="0.762" layer="51" font="vector" ratio="12" rot="R90" align="center">FRAM</text>
 <text x="-16.5" y="7.5" size="0.508" layer="51" font="vector" ratio="12" rot="R90" align="center">LED</text>
 <text x="0.5" y="0" size="0.762" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center">&gt;NAME</text>
+<hole x="-17.96" y="-0.33" drill="1.4"/>
+<hole x="-17.96" y="1.72" drill="1.4"/>
+<hole x="-12.88" y="0.7" drill="1.4"/>
+<text x="-15.62" y="0.7" size="0.762" layer="51" font="vector" ratio="12" rot="R180" align="center">PROG</text>
 </package>
 </packages>
 <symbols>
