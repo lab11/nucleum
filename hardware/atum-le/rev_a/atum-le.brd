@@ -24,16 +24,16 @@
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -131,12 +131,11 @@
 <wire x1="0" y1="18.796" x2="18.796" y2="18.796" width="0" layer="46"/>
 <wire x1="18.796" y1="18.796" x2="18.796" y2="-0.8382" width="0" layer="46"/>
 <wire x1="18.796" y1="-0.8382" x2="0" y2="-0.8382" width="0" layer="46"/>
-<text x="10.2616" y="16.256" size="0.6096" layer="22" font="vector" ratio="12" rot="MR0" align="center">+</text>
-<text x="11.938" y="16.256" size="0.6096" layer="22" font="vector" ratio="12" rot="MR0" align="center">-</text>
-<text x="10.466" y="12.308" size="0.6096" layer="21" font="vector" ratio="14" rot="R180" align="center">ATUM</text>
-<text x="1.504" y="4.422" size="0.6096" layer="22" font="vector" ratio="12" rot="SMR270" align="center">Joshua Adkins
-Brad Campbell</text>
-<text x="2.794" y="4.572" size="0.6096" layer="22" font="vector" ratio="12" rot="SMR270" align="center">2015/004/20</text>
+<text x="10.2616" y="16.256" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="center">+</text>
+<text x="11.938" y="16.256" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="center">-</text>
+<text x="4.318" y="2.794" size="1.016" layer="21" font="vector" ratio="14" rot="R90" align="center">ATUM</text>
+<text x="1.524" y="4.572" size="0.762" layer="22" font="vector" ratio="12" rot="SMR270" align="center">Brad Campbell</text>
+<text x="2.794" y="4.572" size="0.762" layer="22" font="vector" ratio="12" rot="SMR270" align="center">2015/02/23</text>
 <wire x1="0.635" y1="0" x2="17.3228" y2="0" width="0" layer="107"/>
 <wire x1="17.9578" y1="0.635" x2="17.9578" y2="17.3228" width="0" layer="107"/>
 <wire x1="17.3228" y1="17.9578" x2="0.635" y2="17.9578" width="0" layer="107"/>
@@ -775,159 +774,113 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="U2" library="chips" package="TDFN-8" value="FM25LBTDFN-8" x="5.6754" y="15.479" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="FM25L04B-DGRA-ND" x="5.6754" y="15.479" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER" value=" 877-FM25L04B-DG " x="5.6754" y="15.479" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="3.2832" y="16.9376" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="5.6676" y="15.4968" size="0.762" layer="25" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="X1" library="crystals" package="FA-128" value="EPSON-FA-128" x="7.068" y="2.3752" smashed="yes" rot="R270">
-<attribute name="NAME" x="8.8066" y="2.5788" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="7.0688" y="3.6834" size="0.762" layer="25" font="vector" ratio="12" align="bottom-center"/>
 <attribute name="VALUE" x="4.768" y="2.3752" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="C1" library="passives" package="0402_CAP" value="12pF" x="6.022" y="0.6794" smashed="yes">
-<attribute name="NAME" x="4.9178" y="0.782" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="center"/>
+<attribute name="NAME" x="6.022" y="0.2222" size="0.762" layer="25" font="vector" ratio="12" align="center"/>
 <attribute name="VALUE" x="6.022" y="-0.7176" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
-<element name="C2" library="passives" package="0402_CAP" value="12pF" x="8.9542" y="1.0034" smashed="yes">
-<attribute name="NAME" x="8.5416" y="1.6404" size="0.6096" layer="25" font="vector" ratio="12" rot="R180" align="center-right"/>
-<attribute name="VALUE" x="8.9542" y="-0.3936" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<element name="C2" library="passives" package="0402_CAP" value="12pF" x="8.9542" y="1.1534" smashed="yes">
+<attribute name="NAME" x="9.7416" y="1.2804" size="0.762" layer="25" font="vector" ratio="12" rot="R180" align="center-right"/>
+<attribute name="VALUE" x="8.9542" y="-0.2436" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C18" library="passives" package="0402_CAP" value="47nF" x="5.9102" y="7.6152" smashed="yes" rot="R180">
-<attribute name="NAME" x="6.8758" y="7.6774" size="0.6096" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="5.9174" y="7.2342" size="0.762" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="5.9102" y="9.0122" size="1.016" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 </element>
-<element name="C17" library="passives" package="0402_CAP" value="1nF" x="10.0968" y="1.449" smashed="yes" rot="R270">
-<attribute name="NAME" x="10.8468" y="0.7512" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="8.6998" y="1.449" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<element name="C17" library="passives" package="0402_CAP" value="1nF" x="10.1568" y="1.579" smashed="yes" rot="R270">
+<attribute name="NAME" x="10.1568" y="2.4012" size="0.762" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="8.7598" y="1.579" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="C9" library="passives" package="0402_CAP" value="0.1uF" x="9.2278" y="16.4292" smashed="yes" rot="R270">
-<attribute name="NAME" x="10.2376" y="16.5192" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="8.8976" y="16.4292" size="0.762" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="7.8308" y="16.4292" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="C3" library="passives" package="0402_CAP" value="22pF" x="16.3998" y="1.2716" smashed="yes">
-<attribute name="NAME" x="15.2884" y="0.568" size="0.6096" layer="25" font="vector" ratio="12" rot="R270" align="center-right"/>
+<attribute name="NAME" x="17.238" y="1.2716" size="0.762" layer="25" font="vector" ratio="12" rot="R180" align="center-right"/>
 <attribute name="VALUE" x="16.3998" y="-0.1254" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C4" library="passives" package="0402_CAP" value="22pF" x="16.3586" y="3.1972" smashed="yes">
-<attribute name="NAME" x="14.9092" y="3.4286" size="0.6096" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="16.3586" y="2.7908" size="1.016" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="16.3586" y="1.8002" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="D1" library="leds" package="1MM_SQ_4PAD" value="SML-LX0404SIUPGUSB" x="1.3092" y="16.8256" smashed="yes">
 <attribute name="DIGIKEY" value="67-2125-1-ND" x="1.3092" y="16.8256" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="2.5844" y="16.9392" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="1.3092" y="17.7256" size="0.762" layer="25" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="A1" library="chips" package="FRACTUS-ANTENNA-FR05-S1-N-0-102" value="FRACTUS-2.4GHZ-FR05-S1-N-0-102" x="1.9072" y="3.86" smashed="yes" rot="R270">
 <attribute name="RICHARDSON_RFPD" value="FR05-S1-N-0102B" x="1.9072" y="3.86" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="1.9072" y="3.8566" size="0.6096" layer="25" font="vector" ratio="12" align="center"/>
+<attribute name="NAME" x="1.9072" y="3.8566" size="1.016" layer="25" font="vector" ratio="12" align="center"/>
 </element>
 <element name="X2" library="crystals" package="ABS05" value="ABS05-32.768KHZ-T" x="16.2942" y="2.223" smashed="yes">
 <attribute name="DIGIKEY" value="535-11899-1-ND" x="16.2942" y="2.223" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="15.2732" y="2.2842" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="16.2942" y="2.8468" size="0.762" layer="25" font="vector" ratio="12" align="bottom-center"/>
 <attribute name="VALUE" x="16.2942" y="0.523" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="U3" library="chips" package="MICRO-CRYSTAL-C3" value="RV-3049-C3" x="14.1986" y="15.2908" smashed="yes" rot="R180">
-<attribute name="NAME" x="11.7106" y="15.3086" size="0.6096" layer="25" font="vector" ratio="12" rot="R270" align="center"/>
+<attribute name="NAME" x="14.1986" y="15.2894" size="0.762" layer="25" font="vector" ratio="12" rot="R180" align="center"/>
 <attribute name="VALUE" x="14.1986" y="16.7908" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C7" library="passives" package="0402_CAP" value="10nF" x="14.478" y="17.1204" smashed="yes" rot="R180">
-<attribute name="NAME" x="13.6398" y="17.1204" size="0.6096" layer="25" font="vector" ratio="12" align="center-right"/>
+<attribute name="NAME" x="13.6398" y="17.1204" size="0.762" layer="25" font="vector" ratio="12" align="center-right"/>
 <attribute name="VALUE" x="14.478" y="18.5174" size="1.016" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 </element>
 <element name="U4" library="chips" package="R-PWSON-12" value="TPS62740" x="5.5098" y="15.534" smashed="yes" rot="MR90">
 <attribute name="MOUSER" value="595-TPS62740DSST" x="5.5098" y="15.534" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NEWARK" value="27X9745" x="5.5098" y="15.534" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="DIGIKEY" value="296-37134-1-ND" x="5.5098" y="15.534" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="5.4098" y="17.8006" size="0.6096" layer="26" font="vector" ratio="12" rot="MR180" align="bottom-center"/>
+<attribute name="NAME" x="5.5098" y="15.5406" size="0.762" layer="26" font="vector" ratio="12" rot="MR180" align="bottom-center"/>
 </element>
 <element name="L1" library="passives" package="MIPSZ201D" value="2.2" x="1.9284" y="16.0928" smashed="yes" rot="MR90">
-<attribute name="NAME" x="1.023" y="17.0084" size="0.6096" layer="26" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
+<attribute name="NAME" x="1.9284" y="17.377" size="0.762" layer="26" font="vector" ratio="12" rot="MR0" align="bottom-center"/>
 </element>
 <element name="BT1" library="batteries" package="ML-1220/F1BN" value="ML-1220/F1AN" x="11.3622" y="6.691" smashed="yes" rot="MR90">
 <attribute name="MOUSER" value="658-ML-1220/F1BN" x="11.3622" y="6.691" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="DIGIKEY" value="P663-nd" x="11.3622" y="6.691" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="11.3538" y="6.6816" size="0.6096" layer="26" font="vector" ratio="12" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="11.3538" y="6.6816" size="1.016" layer="26" font="vector" ratio="12" rot="MR0" align="bottom-center"/>
 </element>
 <element name="C19" library="passives" package="0603_CAP" value="10uF" x="3.4524" y="14.4164" smashed="yes" rot="MR90">
 <attribute name="DIGIKEY" value="490-7316-1-ND" x="3.4524" y="14.4164" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="2.8174" y="13.8322" size="0.6096" layer="26" font="vector" ratio="12" rot="MR0" align="center-left"/>
+<attribute name="NAME" x="2.8174" y="13.8322" size="0.762" layer="26" font="vector" ratio="12" rot="MR0" align="center-left"/>
 </element>
 <element name="C20" library="passives" package="0603_CAP" value="10uF" x="3.4524" y="16.6516" smashed="yes" rot="MR270">
 <attribute name="DIGIKEY" value="490-7316-1-ND" x="3.4524" y="16.6516" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="2.7554" y="17.6024" size="0.6096" layer="26" font="vector" ratio="12" rot="MR0" align="center-left"/>
+<attribute name="NAME" x="3.4524" y="17.7946" size="0.762" layer="26" font="vector" ratio="12" rot="MR90" align="center-left"/>
 </element>
 <element name="J2" library="headers" package="SH-1X2/1MM" value="SH_MALE_2/1MM" x="2.7244" y="10.0256" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="455-1788-2-ND" x="2.7244" y="10.0256" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="5.6002" y="10.9844" size="0.6096" layer="26" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
+<attribute name="NAME" x="2.7244" y="11.5698" size="0.762" layer="26" font="vector" ratio="12" rot="MR0" align="bottom-center"/>
 </element>
-<element name="LOGO1" library="logos" package="UMICH_SOLID_50MIL" value="UMICH_SOLID_TINY" x="10.4498" y="13.5528" smashed="yes"/>
-<element name="J3" library="atum" package="ATUM-HEADER" value="ATUM-HEADER" x="17.9578" y="8.9789" smashed="yes"/>
-<element name="U5" library="chips" package="QFN-48-6MM" value="NRF51822QF" x="11.078" y="6.808" smashed="yes" rot="R180">
+<element name="LOGO1" library="logos" package="UMICH_SOLID_50MIL" value="UMICH_SOLID_TINY" x="1.7272" y="8.5598" rot="R90"/>
+<element name="J3" library="atum" package="ATUM-HEADER" value="ATUM-HEADER" x="17.9578" y="8.9789"/>
+<element name="U5" library="chips" package="QFN-48-6MM" value="NRF51822QF" x="11.078" y="6.808" rot="R180">
 <attribute name="MOUSER" value="949-NRF51822-QFAB-R7" x="11.078" y="6.808" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIGIKEY" value="1490-1032-1-ND" x="11.078" y="6.808" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="12.408" y="10.838" size="0.6096" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 </element>
-<element name="B1" library="chips" package="BAL-NRF01D3" value="BAL-NRF01D3" x="4.672" y="6.44" smashed="yes" rot="R180">
+<element name="B1" library="chips" package="BAL-NRF01D3" value="BAL-NRF01D3" x="4.672" y="6.44" rot="R180">
 <attribute name="MOUSER" value="511-BAL-NRF01D3" x="4.672" y="6.44" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIGIKEY" value="497-13637-1-ND" x="4.672" y="6.44" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="5.67" y="6.882" size="0.6096" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
-<element name="C21" library="passives" package="0402_CAP" value="2.2nF" x="4.646" y="7.67" smashed="yes" rot="R90">
-<attribute name="NAME" x="5.91" y="8.625" size="0.6096" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="6.043" y="7.67" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-</element>
-<element name="C22" library="passives" package="0402_CAP" value="0.8pF" x="3.844" y="7.66" smashed="yes" rot="R90">
-<attribute name="NAME" x="2.7" y="7.777" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center"/>
-<attribute name="VALUE" x="5.241" y="7.66" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-</element>
-<element name="C5" library="passives" package="0402_CAP" value="1nF" x="7.068" y="4.792" smashed="yes" rot="R90">
-<attribute name="NAME" x="7.647" y="6.132" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="8.465" y="4.792" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-</element>
-<element name="C8" library="passives" package="0402_CAP" value="0.1uF" x="16.848" y="4.332" smashed="yes" rot="R270">
-<attribute name="NAME" x="15.769" y="4.382" size="0.6096" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="15.451" y="4.332" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
-</element>
-<element name="C10" library="passives" package="0402_CAP" value="4.7uF" x="14.998" y="10.438" smashed="yes" rot="R180">
-<attribute name="NAME" x="14.968" y="11.477" size="0.6096" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="14.998" y="11.835" size="1.016" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
-</element>
-<element name="C11" library="passives" package="0402_CAP" value="1uF" x="6.356" y="4.79" smashed="yes" rot="R90">
-<attribute name="NAME" x="6.3" y="6.135" size="0.6096" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="7.753" y="4.79" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-</element>
-<element name="L2" library="passives" package="0402_CAP" value="" x="5.516" y="4.662" smashed="yes" rot="R90">
-<attribute name="NAME" x="5.135" y="4.662" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="6.913" y="4.662" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-</element>
-<element name="L3" library="passives" package="0603_CAP" value="" x="4.99" y="2.782" smashed="yes" rot="R270">
-<attribute name="NAME" x="3.822" y="2.862" size="0.6096" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
-</element>
-<element name="U$1" library="switches" package="RES_SWITCH" value="RES_SWITCH" x="7.41" y="16.33" smashed="yes" rot="MR270"/>
-<element name="R3" library="passives" package="0402_RES" value="12k" x="8.26" y="10.62" smashed="yes" rot="R270">
-<attribute name="NAME" x="8.641" y="10.62" size="0.6096" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="6.863" y="10.62" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
-</element>
-<element name="R8" library="passives" package="0402_RES" value="1k" x="2.18" y="15.05" smashed="yes" rot="R90">
-<attribute name="NAME" x="1.881" y="13.76" size="0.6096" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="3.577" y="15.05" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-</element>
-<element name="R9" library="passives" package="0402_RES" value="1k" x="1.36" y="15.15" smashed="yes" rot="R90">
-<attribute name="NAME" x="1.619" y="13.75" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="2.757" y="15.15" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-</element>
-<element name="R10" library="passives" package="0402_RES" value="1k" x="0.55" y="15.13" smashed="yes" rot="R90">
-<attribute name="NAME" x="0.879" y="13.56" size="0.6096" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="1.947" y="15.13" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-</element>
-<element name="R1" library="passives" package="0402_RES" value="10k" x="16.58" y="15.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="16.961" y="15.37" size="0.6096" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="15.183" y="15.37" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
-</element>
-<element name="R2" library="passives" package="0402_RES" value="10k" x="15" y="13.36" smashed="yes">
-<attribute name="NAME" x="15.13" y="12.351" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center"/>
-<attribute name="VALUE" x="15" y="11.963" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
-</element>
-<element name="J1" library="connector" package="TC2030-IDC-NL" value="TC2030-JLINK-NL" x="2.53" y="9.68" smashed="yes" rot="R180">
-<attribute name="NAME" x="5.63" y="11.93" size="0.6096" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="2.53" y="13.1725" size="1.016" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
-</element>
+<element name="C21" library="passives" package="0402_CAP" value="2.2nF" x="4.646" y="7.67" rot="R90"/>
+<element name="C22" library="passives" package="0402_CAP" value="0.8pF" x="3.844" y="7.66" rot="R90"/>
+<element name="C5" library="passives" package="0402_CAP" value="1nF" x="7.068" y="4.792" rot="R90"/>
+<element name="C8" library="passives" package="0402_CAP" value="0.1uF" x="16.848" y="4.332" rot="R270"/>
+<element name="C10" library="passives" package="0402_CAP" value="4.7uF" x="14.998" y="10.438" rot="R180"/>
+<element name="C11" library="passives" package="0402_CAP" value="1uF" x="6.356" y="4.79" rot="R90"/>
+<element name="L2" library="passives" package="0402_CAP" value="" x="5.516" y="4.662" rot="R90"/>
+<element name="L3" library="passives" package="0603_CAP" value="" x="4.99" y="2.782" rot="R270"/>
+<element name="U$1" library="switches" package="RES_SWITCH" value="RES_SWITCH" x="7.41" y="16.33" rot="MR270"/>
+<element name="R3" library="passives" package="0402_RES" value="12k" x="8.26" y="10.62" rot="R270"/>
+<element name="R8" library="passives" package="0402_RES" value="1k" x="2.18" y="15.05" rot="R90"/>
+<element name="R9" library="passives" package="0402_RES" value="1k" x="1.36" y="15.15" rot="R90"/>
+<element name="R10" library="passives" package="0402_RES" value="1k" x="0.55" y="15.13" rot="R90"/>
+<element name="R1" library="passives" package="0402_RES" value="10k" x="16.58" y="15.37" rot="R270"/>
+<element name="R2" library="passives" package="0402_RES" value="10k" x="15" y="13.36"/>
+<element name="J1" library="connector" package="TC2030-IDC-NL" value="TC2030-JLINK-NL" x="2.53" y="9.68" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1052,7 +1005,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <via x="13.83" y="10.2216" extent="1-16" drill="0.2032"/>
 <via x="10.43" y="16.6616" extent="1-16" drill="0.2032"/>
 <via x="8.53" y="3.03" extent="1-16" drill="0.2032"/>
-<via x="9.37" y="2.34" extent="1-16" drill="0.2032"/>
+<via x="9.42" y="2.41" extent="1-16" drill="0.2032"/>
 <wire x1="7.643" y1="3.1002" x2="8.4702" y2="3.1002" width="0.1524" layer="1"/>
 <wire x1="8.4702" y1="3.1002" x2="8.53" y2="3.03" width="0.1524" layer="1"/>
 <via x="4.76" y="5.61" extent="1-16" drill="0.2032"/>
@@ -1103,10 +1056,10 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="6.358" y1="5.682" x2="6.22" y2="5.82" width="0.1524" layer="1"/>
 <wire x1="6.22" y1="5.82" x2="4.97" y2="5.82" width="0.1524" layer="1"/>
 <wire x1="4.97" y1="5.82" x2="4.76" y2="5.61" width="0.1524" layer="1"/>
-<wire x1="10.0968" y1="1.01593125" x2="10.12426875" y2="0.9934" width="0.1524" layer="1"/>
-<wire x1="10.12426875" y1="0.9934" x2="9.38726875" y2="1.0034" width="0.1524" layer="1"/>
-<wire x1="9.38726875" y1="1.0034" x2="9.42" y2="1.32066875" width="0.1524" layer="1"/>
-<wire x1="9.42" y1="1.32066875" x2="9.37" y2="2.34" width="0.1524" layer="1"/>
+<wire x1="10.1568" y1="1.14593125" x2="10.15426875" y2="1.1534" width="0.1524" layer="1"/>
+<wire x1="10.15426875" y1="1.1534" x2="9.38726875" y2="1.1534" width="0.1524" layer="1"/>
+<wire x1="9.38726875" y1="1.1534" x2="9.49" y2="1.36066875" width="0.1524" layer="1"/>
+<wire x1="9.49" y1="1.36066875" x2="9.42" y2="2.41" width="0.1524" layer="1"/>
 <wire x1="6.45506875" y1="0.6794" x2="6.493" y2="0.71733125" width="0.1524" layer="1"/>
 <wire x1="6.493" y1="0.71733125" x2="6.493" y2="1.6502" width="0.1524" layer="1"/>
 <wire x1="6.493" y1="1.6502" x2="7.643" y2="3.1002" width="0.1524" layer="1"/>
@@ -1188,9 +1141,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="8.4789" y1="0" x2="8.4789" y2="0.7711" width="0.508" layer="15"/>
 <wire x1="8.4789" y1="0.7711" x2="8.46" y2="0.79" width="0.508" layer="15"/>
 <contactref element="J1" pad="1"/>
-<via x="4.2" y="10.45" extent="1-16" drill="0.2032"/>
+<via x="4.42" y="10.5" extent="1-16" drill="0.2032"/>
 <wire x1="3.8" y1="10.315" x2="3.755" y2="10.345" width="0.508" layer="1"/>
-<wire x1="3.755" y1="10.345" x2="4.2" y2="10.45" width="0.508" layer="1"/>
+<wire x1="3.755" y1="10.345" x2="4.42" y2="10.5" width="0.508" layer="1"/>
 <wire x1="16.848" y1="4.76506875" x2="16.76293125" y2="4.68" width="0.1524" layer="1"/>
 <wire x1="16.76293125" y1="4.68" x2="16.67" y2="4.71" width="0.1524" layer="1"/>
 <wire x1="16.67" y1="4.71" x2="16.11" y2="4.7" width="0.1524" layer="1"/>
@@ -1208,11 +1161,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="J3" pad="4"/>
 <contactref element="U5" pad="24"/>
 <contactref element="R3" pad="2"/>
-<wire x1="11.4789" y1="0" x2="11.4789" y2="0.7811" width="0.1524" layer="16"/>
-<wire x1="11.4789" y1="0.7811" x2="11.36" y2="0.94" width="0.1524" layer="16"/>
-<wire x1="11.36" y1="0.94" x2="9.97" y2="0.95" width="0.1524" layer="16"/>
-<wire x1="9.97" y1="0.95" x2="9.51" y2="1.46" width="0.1524" layer="16"/>
-<wire x1="9.51" y1="1.46" x2="6.19" y2="1.46" width="0.1524" layer="16"/>
+<wire x1="11.4789" y1="0" x2="11.4789" y2="0.9311" width="0.1524" layer="16"/>
+<wire x1="11.4789" y1="0.9311" x2="10.96" y2="1.46" width="0.1524" layer="16"/>
+<wire x1="10.96" y1="1.46" x2="6.19" y2="1.46" width="0.1524" layer="16"/>
 <wire x1="6.19" y1="1.46" x2="5.86" y2="1.89" width="0.1524" layer="16"/>
 <wire x1="5.86" y1="1.89" x2="5.86" y2="5.16" width="0.1524" layer="16"/>
 <wire x1="5.86" y1="5.16" x2="6.36" y2="5.66" width="0.1524" layer="16"/>
@@ -1235,9 +1186,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="6.37" y1="9.4" x2="6.37" y2="12.02" width="0.1524" layer="16"/>
 <wire x1="6.37" y1="12.02" x2="6.54" y2="12.19" width="0.1524" layer="16"/>
 <wire x1="2.53" y1="9.045" x2="2.535" y2="9.05" width="0.1524" layer="1"/>
-<wire x1="2.535" y1="9.05" x2="2.53" y2="8.81" width="0.1524" layer="1"/>
-<via x="2.53" y="8.81" extent="1-16" drill="0.2032"/>
-<wire x1="2.53" y1="8.81" x2="3.16" y2="9.67" width="0.1524" layer="2"/>
+<wire x1="2.535" y1="9.05" x2="2.52" y2="8.06" width="0.1524" layer="1"/>
+<via x="2.52" y="8.06" extent="1-16" drill="0.2032"/>
+<wire x1="2.52" y1="8.06" x2="3.16" y2="9.67" width="0.1524" layer="2"/>
 <wire x1="3.16" y1="9.67" x2="3.16" y2="10.87" width="0.1524" layer="2"/>
 <wire x1="3.16" y1="10.87" x2="3.35" y2="11.06" width="0.1524" layer="2"/>
 <wire x1="3.35" y1="11.06" x2="6.37" y2="11.06" width="0.1524" layer="2"/>
@@ -1279,14 +1230,14 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="C2" pad="1"/>
 <contactref element="X1" pad="3"/>
 <contactref element="U5" pad="38"/>
-<wire x1="7.643" y1="1.6502" x2="8.5102" y2="1.6602" width="0.1524" layer="1"/>
-<wire x1="8.5102" y1="1.6602" x2="8.36" y2="1.66" width="0.1524" layer="1"/>
-<wire x1="8.36" y1="1.66" x2="8.36" y2="1.76" width="0.1524" layer="1"/>
-<wire x1="8.36" y1="1.76" x2="9.28" y2="3.2" width="0.1524" layer="1"/>
+<wire x1="7.643" y1="1.6502" x2="8.4702" y2="1.6602" width="0.1524" layer="1"/>
+<wire x1="8.4702" y1="1.6602" x2="8.42" y2="1.77" width="0.1524" layer="1"/>
+<wire x1="8.42" y1="1.77" x2="8.44" y2="1.89" width="0.1524" layer="1"/>
+<wire x1="8.44" y1="1.89" x2="9.28" y2="3.2" width="0.1524" layer="1"/>
 <wire x1="9.28" y1="3.2" x2="9.29" y2="3.77" width="0.1524" layer="1"/>
 <wire x1="9.29" y1="3.77" x2="9.278" y2="3.808" width="0.1524" layer="1"/>
-<wire x1="8.52113125" y1="1.0034" x2="8.51433125" y2="1.6002" width="0.1524" layer="1"/>
-<wire x1="8.51433125" y1="1.6002" x2="8.5102" y2="1.6602" width="0.1524" layer="1"/>
+<wire x1="8.52113125" y1="1.1534" x2="8.47433125" y2="1.6002" width="0.1524" layer="1"/>
+<wire x1="8.47433125" y1="1.6002" x2="8.4702" y2="1.6602" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$15">
 <contactref element="C18" pad="1"/>
@@ -1347,8 +1298,12 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="11.69" y1="9.81" x2="11.678" y2="9.808" width="0.1524" layer="1"/>
 </signal>
 <signal name="SWDIO/!RESET">
+<contactref element="J3" pad="5B"/>
+<contactref element="J3" pad="5"/>
 <contactref element="U5" pad="23"/>
-<wire x1="10.5822125" y1="1.792321875" x2="6.73" y2="1.81" width="0.1524" layer="16"/>
+<wire x1="12.4789" y1="0" x2="12.4789" y2="0.7211" width="0.1524" layer="16"/>
+<wire x1="12.4789" y1="0.7211" x2="11.36" y2="1.79" width="0.1524" layer="16"/>
+<wire x1="11.36" y1="1.79" x2="6.73" y2="1.81" width="0.1524" layer="16"/>
 <wire x1="6.73" y1="1.81" x2="6.4" y2="2.24" width="0.1524" layer="16"/>
 <wire x1="6.4" y1="2.24" x2="6.39" y2="4.98" width="0.1524" layer="16"/>
 <wire x1="6.39" y1="4.98" x2="6.74" y2="5.33" width="0.1524" layer="16"/>
@@ -1365,30 +1320,15 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="6.98" y1="11.8" x2="7.25" y2="12.07" width="0.1524" layer="16"/>
 <wire x1="7.25" y1="12.07" x2="7.25" y2="12.62" width="0.1524" layer="16"/>
 <wire x1="7.25" y1="12.62" x2="7.23" y2="12.64" width="0.1524" layer="16"/>
-<wire x1="3.8" y1="9.045" x2="3.8" y2="9" width="0.1524" layer="1"/>
-<via x="3.8" y="9" extent="1-16" drill="0.2032"/>
-<wire x1="3.8" y1="9" x2="4.52" y2="9" width="0.1524" layer="2"/>
+<wire x1="3.8" y1="9.045" x2="3.81" y2="9.04" width="0.1524" layer="1"/>
+<via x="3.81" y="9.04" extent="1-16" drill="0.2032"/>
+<wire x1="3.81" y1="9.04" x2="4.52" y2="9" width="0.1524" layer="2"/>
 <wire x1="4.52" y1="9" x2="4.66" y2="8.94" width="0.1524" layer="2"/>
 <wire x1="4.66" y1="8.94" x2="6.38" y2="8.94" width="0.1524" layer="2"/>
 <wire x1="6.38" y1="8.94" x2="6.98" y2="9.46" width="0.1524" layer="2"/>
 <wire x1="6.98" y1="9.46" x2="6.98" y2="11.8" width="0.1524" layer="2"/>
 <wire x1="6.98" y1="11.8" x2="7.23" y2="12.05" width="0.1524" layer="2"/>
 <wire x1="7.23" y1="12.05" x2="7.23" y2="12.64" width="0.1524" layer="2"/>
-<contactref element="J3" pad="3"/>
-<contactref element="J3" pad="3B"/>
-<wire x1="10.4789" y1="0" x2="10.83" y2="0.3511" width="0.1524" layer="1"/>
-<wire x1="10.83" y1="0.3511" x2="10.81" y2="1.48" width="0.1524" layer="1"/>
-<via x="10.81" y="1.48" extent="1-16" drill="0.2032"/>
-<wire x1="10.81" y1="1.48" x2="10.8222125" y2="1.4777875" width="0.1524" layer="16"/>
-<wire x1="10.8222125" y1="1.4777875" x2="10.5822125" y2="1.792321875" width="0.1524" layer="16"/>
-<contactref element="J3" pad="30"/>
-<contactref element="J3" pad="30B"/>
-<wire x1="10.4789" y1="17.9578" x2="9.85" y2="17.3289" width="0.1524" layer="15"/>
-<wire x1="9.85" y1="17.3289" x2="9.85" y2="15.05" width="0.1524" layer="15"/>
-<wire x1="9.85" y1="15.05" x2="9.71" y2="14.91" width="0.1524" layer="15"/>
-<wire x1="9.71" y1="14.91" x2="7.56" y2="14.91" width="0.1524" layer="15"/>
-<wire x1="7.56" y1="14.91" x2="7.23" y2="14.58" width="0.1524" layer="15"/>
-<wire x1="7.23" y1="14.58" x2="7.23" y2="12.64" width="0.1524" layer="15"/>
 </signal>
 <signal name="BOOTLOADER_TX">
 <wire x1="12.2252" y1="12.294" x2="12.2428" y2="12.2916" width="0.1524" layer="1"/>
@@ -1764,11 +1704,11 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="J3" pad="2"/>
 <contactref element="J3" pad="2B"/>
 <contactref element="U5" pad="25"/>
-<wire x1="9.4789" y1="0" x2="9.4689" y2="0.8411" width="0.1524" layer="16"/>
-<wire x1="9.4689" y1="0.8411" x2="9.25" y2="1.11" width="0.1524" layer="16"/>
-<wire x1="9.25" y1="1.11" x2="5.68" y2="1.13" width="0.1524" layer="16"/>
-<wire x1="5.68" y1="1.13" x2="5.43" y2="1.49" width="0.1524" layer="16"/>
-<wire x1="5.43" y1="1.49" x2="5.43" y2="5.28" width="0.1524" layer="16"/>
+<wire x1="9.4789" y1="0" x2="9.4689" y2="1.0311" width="0.1524" layer="16"/>
+<wire x1="9.4689" y1="1.0311" x2="9.32" y2="1.15" width="0.1524" layer="16"/>
+<wire x1="9.32" y1="1.15" x2="5.69" y2="1.13" width="0.1524" layer="16"/>
+<wire x1="5.69" y1="1.13" x2="5.44" y2="1.49" width="0.1524" layer="16"/>
+<wire x1="5.44" y1="1.49" x2="5.43" y2="5.28" width="0.1524" layer="16"/>
 <wire x1="5.43" y1="5.28" x2="5.96" y2="5.81" width="0.1524" layer="16"/>
 <wire x1="5.96" y1="5.81" x2="5.96" y2="7.98" width="0.1524" layer="16"/>
 <via x="5.75" y="12.14" extent="1-16" drill="0.2032"/>
@@ -1787,8 +1727,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="C17" pad="1"/>
 <contactref element="U5" pad="39"/>
 <wire x1="9.678" y1="3.808" x2="9.678" y2="2.982" width="0.1524" layer="1"/>
-<wire x1="9.678" y1="2.982" x2="10.1768" y2="2.3932" width="0.1524" layer="1"/>
-<wire x1="10.1768" y1="2.3932" x2="10.0968" y2="1.88206875" width="0.1524" layer="1"/>
+<wire x1="9.678" y1="2.982" x2="10.1568" y2="2.3832" width="0.1524" layer="1"/>
+<wire x1="10.1568" y1="2.3832" x2="10.1568" y2="2.01206875" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="U5" pad="31"/>
@@ -1850,10 +1790,10 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="15.27" y1="2.79" x2="15.12" y2="2.6" width="0.1524" layer="2"/>
 <wire x1="15.12" y1="2.6" x2="12.99" y2="2.59" width="0.1524" layer="2"/>
 <wire x1="12.99" y1="2.59" x2="12.69" y2="2.29" width="0.1524" layer="2"/>
-<wire x1="12.69" y1="2.29" x2="12.73" y2="0.87" width="0.1524" layer="2"/>
-<wire x1="12.73" y1="0.87" x2="12.53" y2="0.67" width="0.1524" layer="2"/>
-<wire x1="12.53" y1="0.67" x2="4.81" y2="0.65" width="0.1524" layer="2"/>
-<wire x1="4.81" y1="0.65" x2="4.5" y2="1.12" width="0.1524" layer="2"/>
+<wire x1="12.69" y1="2.29" x2="12.7" y2="1.2" width="0.1524" layer="2"/>
+<wire x1="12.7" y1="1.2" x2="12.5" y2="1" width="0.1524" layer="2"/>
+<wire x1="12.5" y1="1" x2="4.65" y2="1" width="0.1524" layer="2"/>
+<wire x1="4.65" y1="1" x2="4.5" y2="1.12" width="0.1524" layer="2"/>
 <via x="4.5" y="1.12" extent="1-16" drill="0.2032"/>
 <wire x1="4.5" y1="1.12" x2="4.51" y2="1.542" width="0.1524" layer="1"/>
 <wire x1="4.51" y1="1.542" x2="4.99" y2="2.132" width="0.1524" layer="1"/>
@@ -1945,6 +1885,10 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="10.25" y1="15.57" x2="11.4" y2="17.03" width="0.1524" layer="16"/>
 <wire x1="11.4" y1="17.03" x2="11.4" y2="17.8789" width="0.1524" layer="16"/>
 <wire x1="11.4" y1="17.8789" x2="11.4789" y2="17.9578" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$1">
+<contactref element="J3" pad="30B"/>
+<contactref element="J3" pad="30"/>
 </signal>
 <signal name="P10">
 <contactref element="U5" pad="16"/>
@@ -2038,8 +1982,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="J3" pad="6"/>
 <wire x1="13.4789" y1="0" x2="13.34" y2="0" width="0.1524" layer="1"/>
 <wire x1="13.34" y1="0" x2="12.78" y2="0.68" width="0.1524" layer="1"/>
-<wire x1="12.78" y1="0.68" x2="12.33" y2="0.67" width="0.1524" layer="1"/>
-<wire x1="12.33" y1="0.67" x2="10.08" y2="3.02" width="0.1524" layer="1"/>
+<wire x1="12.78" y1="0.68" x2="12.25" y2="0.69" width="0.1524" layer="1"/>
+<wire x1="12.25" y1="0.69" x2="10.08" y2="3.02" width="0.1524" layer="1"/>
 <wire x1="10.08" y1="3.02" x2="10.09" y2="3.806" width="0.1524" layer="1"/>
 <wire x1="10.09" y1="3.806" x2="10.078" y2="3.808" width="0.1524" layer="1"/>
 </signal>
@@ -2070,26 +2014,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="R9" pad="2"/>
 <wire x1="1.36" y1="15.58306875" x2="0.9174" y2="16.25566875" width="0.1524" layer="1"/>
 <wire x1="0.9174" y1="16.25566875" x2="0.8774" y2="16.3938" width="0.1524" layer="1"/>
-</signal>
-<signal name="UNUSED1">
-<contactref element="J3" pad="5B"/>
-<contactref element="J3" pad="5"/>
-</signal>
-<signal name="UNUSED5">
-<contactref element="J3" pad="13"/>
-<contactref element="J3" pad="13B"/>
-</signal>
-<signal name="UNUSED4">
-<contactref element="J3" pad="12"/>
-<contactref element="J3" pad="12B"/>
-</signal>
-<signal name="UNUSED3">
-<contactref element="J3" pad="11"/>
-<contactref element="J3" pad="11B"/>
-</signal>
-<signal name="UNUSED2">
-<contactref element="J3" pad="10"/>
-<contactref element="J3" pad="10B"/>
 </signal>
 </signals>
 <errors>
@@ -2745,12 +2669,17 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="4,2,8e6a7739180395a9"/>
 <approved hash="19,1,2e3b0a5f0b0c2f68"/>
 <approved hash="19,1,737a7b1e7c1f747b"/>
+<approved hash="19,1,5bb5f281c7140439"/>
+<approved hash="19,1,6c7e181a190d6d69"/>
+<approved hash="19,1,4d061a2a0564798f"/>
+<approved hash="4,1,86844f8ba7940606"/>
+<approved hash="4,1,187429a18ecfd8ed"/>
+<approved hash="4,2,af338ae3890dc86c"/>
+<approved hash="4,2,187429a18ecfd8ed"/>
+<approved hash="4,15,187429a18ecfd8ed"/>
 <approved hash="4,16,29bc4e6245ee1833"/>
 <approved hash="4,16,45ff977794b76ef9"/>
-<approved hash="4,16,1ee764b612cacebc"/>
-<approved hash="19,16,e8a326adc7af09a1"/>
-<approved hash="4,1,c388d37153ed259f"/>
-<approved hash="4,16,b7d17bdd96b47685"/>
+<approved hash="4,16,187429a18ecfd8ed"/>
 <approved hash="3,16,daebd8e9d8e9daeb"/>
 <approved hash="3,16,a67da47fa47fa67d"/>
 <approved hash="3,16,7bf579f779f77bf5"/>
@@ -2770,8 +2699,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="4,1,8fe6fd64066e74ec"/>
 <approved hash="4,1,91ea0768fc726af0"/>
 <approved hash="4,1,b3ef216dda7448f6"/>
-<approved hash="4,1,674d0650470377c4"/>
-<approved hash="4,1,fb52a1263a32f8db"/>
 <approved hash="4,1,95f44b76b0796efb"/>
 <approved hash="4,1,b7f9657b9e024c80"/>
 <approved hash="4,1,44a8e0950e985324"/>
@@ -2802,65 +2729,64 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="4,1,8a7865c661c08e7e"/>
 <approved hash="4,1,a87d3bc33fddac63"/>
 <approved hash="19,1,2e530a370ce42880"/>
-<approved hash="19,1,5bb5f281c7140439"/>
-<approved hash="19,1,6c7e181a190d6d69"/>
-<approved hash="19,1,4d061a2a0564798f"/>
-<approved hash="4,1,86844f8ba7940606"/>
-<approved hash="4,1,187429a18ecfd8ed"/>
+<approved hash="19,1,6cba78de7d0d6969"/>
+<approved hash="19,1,3b002f8a04388490"/>
+<approved hash="4,1,280b0a0f13fae22f"/>
+<approved hash="4,1,c1797f35526398e6"/>
 <approved hash="4,1,decd28b2df8f0638"/>
-<approved hash="4,1,b7e4b9004993699a"/>
 <approved hash="4,1,5929a997d353f742"/>
+<approved hash="4,1,b7e4b9004993699a"/>
 <approved hash="19,1,705bf83ff80d7069"/>
 <approved hash="5,1,2d800aa9a408f279"/>
 <approved hash="5,1,45d74aa8ab08a577"/>
-<approved hash="19,1,606a180e194f612b"/>
-<approved hash="19,1,607a181e1b1f637b"/>
 <approved hash="19,1,621a1a7e1d0f656b"/>
-<approved hash="19,1,6e1a167e172f6f4b"/>
 <approved hash="19,1,675a1f3e1c0f646b"/>
+<approved hash="19,1,6e1a167e172f6f4b"/>
+<approved hash="19,1,607a181e1b1f637b"/>
 <approved hash="19,1,614a192e242b5c4f"/>
+<approved hash="19,1,606a180e194f612b"/>
+<approved hash="19,1,7b5c7f387c09786d"/>
 <approved hash="19,1,7c7c78187b197f7d"/>
 <approved hash="19,1,7d4c7928442d4049"/>
-<approved hash="19,1,7e1c7a787d09796d"/>
-<approved hash="19,1,7b5c7f387c09786d"/>
 <approved hash="19,1,7c6c780879497d2d"/>
+<approved hash="19,1,7e1c7a787d09796d"/>
 <approved hash="19,1,721c76787729734d"/>
-<approved hash="19,1,4c7d18191b1c4f78"/>
-<approved hash="19,1,4b5d1f391c0c4868"/>
 <approved hash="19,1,4d4d19292428704c"/>
+<approved hash="19,1,4b5d1f391c0c4868"/>
+<approved hash="19,1,4e1d1a791d0c4968"/>
+<approved hash="19,1,4c7d18191b1c4f78"/>
 <approved hash="19,1,421d1679172c4348"/>
 <approved hash="19,1,4c6d1809194c4d28"/>
-<approved hash="19,1,4e1d1a791d0c4968"/>
 <approved hash="19,1,621fd67bd7256341"/>
-<approved hash="19,1,6d4fd92be4215045"/>
+<approved hash="19,1,6b5fdf3bdc056861"/>
 <approved hash="19,1,6c6fd80bd9456d21"/>
 <approved hash="19,1,6c7fd81bdb156f71"/>
 <approved hash="19,1,6e1fda7bdd056961"/>
-<approved hash="19,1,6b5fdf3bdc056861"/>
-<approved hash="19,1,6d4d19292428504c"/>
+<approved hash="19,1,6d4fd92be4215045"/>
 <approved hash="19,1,6b5d1f391c0c6868"/>
-<approved hash="19,1,6c7d18191b1c6f78"/>
-<approved hash="19,1,6e1d1a791d0c6968"/>
-<approved hash="19,1,621d1679172c6348"/>
 <approved hash="19,1,6c6d1809194c6d28"/>
-<approved hash="19,1,c8824e52b30631d6"/>
-<approved hash="19,1,43f8c4b53862ba35"/>
-<approved hash="19,1,77d6f71f08048cbb"/>
-<approved hash="19,1,cedb4995b5790927"/>
+<approved hash="19,1,621d1679172c6348"/>
+<approved hash="19,1,6e1d1a791d0c6968"/>
+<approved hash="19,1,6d4d19292428504c"/>
+<approved hash="19,1,6c7d18191b1c6f78"/>
 <approved hash="19,1,4b25cce835a5b1f2"/>
+<approved hash="19,1,c8824e52b30631d6"/>
+<approved hash="19,1,cedb4995b5790927"/>
+<approved hash="19,1,77d6f71f08048cbb"/>
 <approved hash="19,1,fa087dc482b00104"/>
+<approved hash="19,1,43f8c4b53862ba35"/>
 <approved hash="5,1,4b9b6ca9a808fe62"/>
 <approved hash="5,1,23cc2ca8a708a96c"/>
 <approved hash="5,1,699e4ea99408c267"/>
 <approved hash="5,1,01c90ea89b089569"/>
 <approved hash="5,1,8791a0a950080668"/>
 <approved hash="5,1,efc6e0a85f085166"/>
-<approved hash="5,1,a59482a99408c26d"/>
 <approved hash="5,1,cdc3c2a89b089563"/>
+<approved hash="5,1,a59482a99408c26d"/>
 <approved hash="5,1,abb8a4a8a708a918"/>
 <approved hash="5,1,c3efe4a9a808fe16"/>
-<approved hash="5,1,e1e2c6a9a408f21b"/>
 <approved hash="5,1,89b586a8ab08a515"/>
+<approved hash="5,1,e1e2c6a9a408f21b"/>
 <approved hash="5,1,97b298a8af08a112"/>
 <approved hash="5,1,ffe5d8a9a008f61c"/>
 <approved hash="4,1,bc40c37b28b64402"/>
@@ -2873,34 +2799,44 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="4,1,254a38e505df4e71"/>
 <approved hash="4,1,0ec80248f01c57de"/>
 <approved hash="4,1,c315bf74fa758b51"/>
-<approved hash="5,1,a226fb0b08a409f8"/>
-<approved hash="4,1,3af70f458d44b8f6"/>
+<approved hash="5,1,91f2fb0308543ad4"/>
+<approved hash="5,1,94d0fb0308903f32"/>
+<approved hash="4,1,702135f7b7f6f220"/>
+<approved hash="5,1,9e14fb0b089835f6"/>
+<approved hash="4,1,0b0338d9bad88902"/>
 <approved hash="5,1,899cfb1b08b8224e"/>
 <approved hash="4,1,17fb2d51af5095fa"/>
-<approved hash="5,1,e58afb0308a44e5c"/>
-<approved hash="4,1,63a9413fc33ee1a8"/>
+<approved hash="5,1,b6befb1b08b41d60"/>
+<approved hash="5,1,b3c0fb0308b01802"/>
+<approved hash="4,1,2ebf18cd9accacbe"/>
+<approved hash="4,1,12dd10eb92ea90dc"/>
+<approved hash="5,1,b8e2fb0308b41324"/>
+<approved hash="4,1,28911ea79ca6aa90"/>
 <approved hash="5,1,a504fb0b08b80ec6"/>
+<approved hash="5,1,a226fb0b08a409f8"/>
 <approved hash="4,1,3f1505638762bd14"/>
-<approved hash="5,1,9e14fb0b089835f6"/>
-<approved hash="5,1,91f2fb0308543ad4"/>
-<approved hash="4,1,0b0338d9bad88902"/>
-<approved hash="5,1,94d0fb0308903f32"/>
+<approved hash="4,1,247301898388a672"/>
 <approved hash="5,1,efcefb7b08d44410"/>
 <approved hash="4,1,754f321db01cf74e"/>
-<approved hash="5,1,b8e2fb0308b41324"/>
-<approved hash="5,1,b3c0fb0308b01802"/>
-<approved hash="4,1,28911ea79ca6aa90"/>
 <approved hash="4,1,062523b3a1b28424"/>
-<approved hash="4,1,247301898388a672"/>
-<approved hash="4,1,702135f7b7f6f220"/>
-<approved hash="5,1,b6befb1b08b41d60"/>
-<approved hash="4,1,12dd10eb92ea90dc"/>
 <approved hash="5,1,e2acfb3b0898497e"/>
-<approved hash="4,1,7e8b4461c660fc8a"/>
-<approved hash="4,1,2ebf18cd9accacbe"/>
 <approved hash="4,1,7a6d4f3bcd3af86c"/>
+<approved hash="4,1,3af70f458d44b8f6"/>
+<approved hash="5,1,e58afb0308a44e5c"/>
+<approved hash="4,1,7e8b4461c660fc8a"/>
+<approved hash="4,1,63a9413fc33ee1a8"/>
 <approved hash="4,1,ee3f236652c7bc3c"/>
 <approved hash="4,1,ac9948f7b6485dfe"/>
+<approved hash="4,2,8fe6fd64066e74ec"/>
+<approved hash="4,2,91ea0768fc726af0"/>
+<approved hash="4,2,b3ef216dda7448f6"/>
+<approved hash="4,2,95f44b76b0796efb"/>
+<approved hash="4,2,b7f9657b9e024c80"/>
+<approved hash="4,2,d9fe8f7c74072285"/>
+<approved hash="4,2,fb83a9015208008a"/>
+<approved hash="4,2,1d88f30a080ce68e"/>
+<approved hash="4,2,3f8dad0f5611c493"/>
+<approved hash="4,2,eb113ce006239a30"/>
 <approved hash="4,2,18166ba86fa21c1c"/>
 <approved hash="4,2,a25ca2706cdfb736"/>
 <approved hash="4,2,0bf0e6ee8bbec320"/>
@@ -2915,67 +2851,56 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="4,2,8a7865c661c08e7e"/>
 <approved hash="4,2,e16824bf2cf51d8e"/>
 <approved hash="4,2,a87d3bc33fddac63"/>
-<approved hash="4,2,8fe6fd64066e74ec"/>
-<approved hash="4,2,91ea0768fc726af0"/>
-<approved hash="4,2,b3ef216dda7448f6"/>
-<approved hash="4,2,95f44b76b0796efb"/>
-<approved hash="4,2,b7f9657b9e024c80"/>
-<approved hash="4,2,d9fe8f7c74072285"/>
-<approved hash="4,2,fb83a9015208008a"/>
-<approved hash="4,2,1d88f30a080ce68e"/>
-<approved hash="4,2,3f8dad0f5611c493"/>
-<approved hash="4,2,eb113ce006239a30"/>
-<approved hash="4,2,af338ae3890dc86c"/>
-<approved hash="4,2,187429a18ecfd8ed"/>
+<approved hash="4,2,6627b3dbe2411b5e"/>
+<approved hash="4,2,c1797f35526398e6"/>
 <approved hash="4,2,7cf1ca0653199c8a"/>
 <approved hash="4,2,645d85daaf503e22"/>
-<approved hash="5,2,45d74aa8ab08a577"/>
 <approved hash="5,2,2d800aa9a408f279"/>
-<approved hash="5,2,23cc2ca8a708a96c"/>
+<approved hash="5,2,45d74aa8ab08a577"/>
 <approved hash="5,2,4b9b6ca9a808fe62"/>
+<approved hash="5,2,23cc2ca8a708a96c"/>
 <approved hash="5,2,699e4ea99408c267"/>
 <approved hash="5,2,01c90ea89b089569"/>
-<approved hash="5,2,8791a0a950080668"/>
 <approved hash="5,2,efc6e0a85f085166"/>
-<approved hash="5,2,a59482a99408c26d"/>
+<approved hash="5,2,8791a0a950080668"/>
 <approved hash="5,2,cdc3c2a89b089563"/>
-<approved hash="5,2,c3efe4a9a808fe16"/>
+<approved hash="5,2,a59482a99408c26d"/>
 <approved hash="5,2,abb8a4a8a708a918"/>
+<approved hash="5,2,c3efe4a9a808fe16"/>
 <approved hash="5,2,e1e2c6a9a408f21b"/>
 <approved hash="5,2,89b586a8ab08a515"/>
-<approved hash="5,2,ffe5d8a9a008f61c"/>
 <approved hash="5,2,97b298a8af08a112"/>
+<approved hash="5,2,ffe5d8a9a008f61c"/>
 <approved hash="4,2,81afba2e06231dd0"/>
 <approved hash="4,2,882039f3d9c1741e"/>
-<approved hash="5,2,91f2fb0308543ad4"/>
-<approved hash="5,2,94d0fb0308903f32"/>
-<approved hash="4,2,702135f7b7f6f220"/>
-<approved hash="5,2,899cfb1b08b8224e"/>
+<approved hash="5,2,b3c0fb0308b01802"/>
 <approved hash="5,2,b6befb1b08b41d60"/>
-<approved hash="4,2,12dd10eb92ea90dc"/>
+<approved hash="4,2,2ebf18cd9accacbe"/>
+<approved hash="5,2,a504fb0b08b80ec6"/>
+<approved hash="5,2,b8e2fb0308b41324"/>
+<approved hash="4,2,247301898388a672"/>
+<approved hash="5,2,899cfb1b08b8224e"/>
+<approved hash="4,2,17fb2d51af5095fa"/>
+<approved hash="5,2,a226fb0b08a409f8"/>
+<approved hash="4,2,3f1505638762bd14"/>
+<approved hash="4,2,28911ea79ca6aa90"/>
+<approved hash="5,2,94d0fb0308903f32"/>
+<approved hash="5,2,efcefb7b08d44410"/>
+<approved hash="4,2,754f321db01cf74e"/>
+<approved hash="5,2,91f2fb0308543ad4"/>
+<approved hash="4,2,702135f7b7f6f220"/>
 <approved hash="5,2,9e14fb0b089835f6"/>
 <approved hash="4,2,0b0338d9bad88902"/>
 <approved hash="4,2,062523b3a1b28424"/>
-<approved hash="5,2,a226fb0b08a409f8"/>
-<approved hash="4,2,3af70f458d44b8f6"/>
-<approved hash="4,2,17fb2d51af5095fa"/>
-<approved hash="5,2,efcefb7b08d44410"/>
-<approved hash="4,2,754f321db01cf74e"/>
-<approved hash="5,2,b3c0fb0308b01802"/>
-<approved hash="5,2,b8e2fb0308b41324"/>
-<approved hash="4,2,28911ea79ca6aa90"/>
-<approved hash="4,2,2ebf18cd9accacbe"/>
-<approved hash="5,2,a504fb0b08b80ec6"/>
-<approved hash="4,2,3f1505638762bd14"/>
-<approved hash="4,2,247301898388a672"/>
 <approved hash="5,2,e2acfb3b0898497e"/>
-<approved hash="4,2,7a6d4f3bcd3af86c"/>
 <approved hash="5,2,e58afb0308a44e5c"/>
-<approved hash="4,2,63a9413fc33ee1a8"/>
 <approved hash="4,2,7e8b4461c660fc8a"/>
+<approved hash="4,2,3af70f458d44b8f6"/>
+<approved hash="4,2,7a6d4f3bcd3af86c"/>
+<approved hash="4,2,12dd10eb92ea90dc"/>
+<approved hash="4,2,63a9413fc33ee1a8"/>
 <approved hash="4,15,18166ba86fa21c1c"/>
 <approved hash="4,15,061a91a495be0200"/>
-<approved hash="4,15,363606931b8b8985"/>
 <approved hash="4,15,241fb7a1b3b82006"/>
 <approved hash="4,15,0204ddbad9b5060b"/>
 <approved hash="4,15,2009f3b7f7ce2470"/>
@@ -2995,21 +2920,21 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="4,15,1d88f30a080ce68e"/>
 <approved hash="4,15,3f8dad0f5611c493"/>
 <approved hash="4,15,eb113ce006239a30"/>
-<approved hash="4,15,187429a18ecfd8ed"/>
-<approved hash="5,15,2d800aa9a408f279"/>
+<approved hash="4,15,c1797f35526398e6"/>
 <approved hash="5,15,45d74aa8ab08a577"/>
-<approved hash="5,15,4b9b6ca9a808fe62"/>
+<approved hash="5,15,2d800aa9a408f279"/>
 <approved hash="5,15,23cc2ca8a708a96c"/>
-<approved hash="5,15,699e4ea99408c267"/>
+<approved hash="5,15,4b9b6ca9a808fe62"/>
 <approved hash="5,15,01c90ea89b089569"/>
+<approved hash="5,15,699e4ea99408c267"/>
 <approved hash="5,15,8791a0a950080668"/>
 <approved hash="5,15,efc6e0a85f085166"/>
-<approved hash="5,15,a59482a99408c26d"/>
 <approved hash="5,15,cdc3c2a89b089563"/>
+<approved hash="5,15,a59482a99408c26d"/>
 <approved hash="5,15,abb8a4a8a708a918"/>
 <approved hash="5,15,c3efe4a9a808fe16"/>
-<approved hash="5,15,e1e2c6a9a408f21b"/>
 <approved hash="5,15,89b586a8ab08a515"/>
+<approved hash="5,15,e1e2c6a9a408f21b"/>
 <approved hash="5,15,97b298a8af08a112"/>
 <approved hash="5,15,ffe5d8a9a008f61c"/>
 <approved hash="4,15,e9c5d76ad6dce94e"/>
@@ -3020,32 +2945,32 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="4,15,d79a96df74d23640"/>
 <approved hash="4,15,10f20d85204818d3"/>
 <approved hash="4,15,8df31b6ce9a9d92b"/>
-<approved hash="5,15,91f2fb0308543ad4"/>
+<approved hash="5,15,b6befb1b08b41d60"/>
+<approved hash="5,15,b3c0fb0308b01802"/>
+<approved hash="4,15,2ebf18cd9accacbe"/>
+<approved hash="5,15,efcefb7b08d44410"/>
+<approved hash="5,15,94d0fb0308903f32"/>
+<approved hash="4,15,754f321db01cf74e"/>
+<approved hash="5,15,a504fb0b08b80ec6"/>
+<approved hash="5,15,a226fb0b08a409f8"/>
+<approved hash="4,15,3f1505638762bd14"/>
+<approved hash="5,15,b8e2fb0308b41324"/>
+<approved hash="4,15,247301898388a672"/>
 <approved hash="5,15,9e14fb0b089835f6"/>
+<approved hash="4,15,062523b3a1b28424"/>
+<approved hash="4,15,3af70f458d44b8f6"/>
+<approved hash="5,15,91f2fb0308543ad4"/>
 <approved hash="4,15,0b0338d9bad88902"/>
-<approved hash="5,15,899cfb1b08b8224e"/>
-<approved hash="4,15,17fb2d51af5095fa"/>
 <approved hash="5,15,e2acfb3b0898497e"/>
+<approved hash="4,15,7a6d4f3bcd3af86c"/>
+<approved hash="4,15,702135f7b7f6f220"/>
 <approved hash="5,15,e58afb0308a44e5c"/>
 <approved hash="4,15,7e8b4461c660fc8a"/>
-<approved hash="5,15,94d0fb0308903f32"/>
-<approved hash="5,15,efcefb7b08d44410"/>
-<approved hash="4,15,754f321db01cf74e"/>
-<approved hash="4,15,702135f7b7f6f220"/>
-<approved hash="4,15,7a6d4f3bcd3af86c"/>
-<approved hash="5,15,b3c0fb0308b01802"/>
-<approved hash="5,15,b6befb1b08b41d60"/>
-<approved hash="4,15,2ebf18cd9accacbe"/>
-<approved hash="5,15,b8e2fb0308b41324"/>
-<approved hash="5,15,a504fb0b08b80ec6"/>
-<approved hash="4,15,247301898388a672"/>
-<approved hash="4,15,28911ea79ca6aa90"/>
-<approved hash="5,15,a226fb0b08a409f8"/>
-<approved hash="4,15,3af70f458d44b8f6"/>
-<approved hash="4,15,062523b3a1b28424"/>
+<approved hash="5,15,899cfb1b08b8224e"/>
 <approved hash="4,15,12dd10eb92ea90dc"/>
+<approved hash="4,15,17fb2d51af5095fa"/>
 <approved hash="4,15,63a9413fc33ee1a8"/>
-<approved hash="4,15,3f1505638762bd14"/>
+<approved hash="4,15,28911ea79ca6aa90"/>
 <approved hash="4,15,8337ed3a508f1810"/>
 <approved hash="4,15,3d639e1d9d243e5a"/>
 <approved hash="4,16,101136239a9a071c"/>
@@ -3068,8 +2993,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="4,16,5adcb1699d3ebd64"/>
 <approved hash="4,16,2009f3b7f7ce2470"/>
 <approved hash="4,16,9bb54fa84fd19bcc"/>
-<approved hash="4,16,2950c37acfb10030"/>
 <approved hash="4,16,993eb048544477d4"/>
+<approved hash="4,16,2950c37acfb10030"/>
 <approved hash="4,16,4e0e19b01dcb4a75"/>
 <approved hash="4,16,7db22daf2dd57dc8"/>
 <approved hash="4,16,6c733fcd3bc4687a"/>
@@ -3082,7 +3007,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="4,16,fa7bd0fb2ff10571"/>
 <approved hash="4,16,91ea0768fc726af0"/>
 <approved hash="4,16,dc76b2f64dec236c"/>
-<approved hash="4,16,63e43d39b43b4658"/>
+<approved hash="4,16,b7d17bdd96b47685"/>
 <approved hash="4,16,b3ef216dda7448f6"/>
 <approved hash="4,16,be6d94ed6beb416b"/>
 <approved hash="4,16,95f44b76b0796efb"/>
@@ -3090,6 +3015,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="4,16,fee428b1b4c6f0bf"/>
 <approved hash="4,16,b7f9657b9e024c80"/>
 <approved hash="4,16,826458e4a79d7d1d"/>
+<approved hash="4,16,1ee764b612cacebc"/>
 <approved hash="4,16,d9fe8f7c74072285"/>
 <approved hash="4,16,64633ae3c5999b19"/>
 <approved hash="4,16,fb83a9015208008a"/>
@@ -3099,79 +3025,73 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="4,16,3f8dad0f5611c493"/>
 <approved hash="4,16,0a10e0901f8ef50e"/>
 <approved hash="4,16,eb113ce006239a30"/>
-<approved hash="4,16,187429a18ecfd8ed"/>
+<approved hash="4,16,c1797f35526398e6"/>
 <approved hash="4,16,ce01b2bc235825c6"/>
 <approved hash="4,16,ecb38945ffa2a222"/>
 <approved hash="19,16,705bf83ff80d7069"/>
-<approved hash="5,16,2d800aa9a408f279"/>
 <approved hash="5,16,45d74aa8ab08a577"/>
+<approved hash="5,16,2d800aa9a408f279"/>
 <approved hash="5,16,23cc2ca8a708a96c"/>
 <approved hash="5,16,4b9b6ca9a808fe62"/>
-<approved hash="5,16,01c90ea89b089569"/>
 <approved hash="5,16,699e4ea99408c267"/>
+<approved hash="19,16,e8a326adc7af09a1"/>
+<approved hash="5,16,01c90ea89b089569"/>
 <approved hash="5,16,efc6e0a85f085166"/>
 <approved hash="5,16,8791a0a950080668"/>
 <approved hash="5,16,a59482a99408c26d"/>
-<approved hash="19,16,74afd2a133a295ac"/>
 <approved hash="5,16,cdc3c2a89b089563"/>
-<approved hash="5,16,abb8a4a8a708a918"/>
 <approved hash="5,16,c3efe4a9a808fe16"/>
+<approved hash="5,16,abb8a4a8a708a918"/>
 <approved hash="5,16,89b586a8ab08a515"/>
 <approved hash="5,16,e1e2c6a9a408f21b"/>
 <approved hash="5,16,ffe5d8a9a008f61c"/>
 <approved hash="5,16,97b298a8af08a112"/>
 <approved hash="4,16,882039f3d9c1741e"/>
-<approved hash="19,16,4d790f6d01624376"/>
-<approved hash="4,16,98871c719c7f1889"/>
-<approved hash="19,16,4be310731e7c45ec"/>
-<approved hash="4,16,83b91893989d03b7"/>
-<approved hash="4,16,cc95284fa8414c9b"/>
-<approved hash="19,16,5ff7044f0a4051f8"/>
-<approved hash="4,16,9465035f8351146b"/>
 <approved hash="4,16,9143063d8633114d"/>
-<approved hash="4,16,b7b72561a56f37b9"/>
-<approved hash="4,16,ae210d1b8d152e2f"/>
 <approved hash="19,16,47051911171e490a"/>
 <approved hash="4,16,86db15b595bb06d5"/>
-<approved hash="4,16,c8732f2daf23487d"/>
-<approved hash="4,16,baa92183a18d3aa7"/>
-<approved hash="4,16,c23f59e9d9e74231"/>
-<approved hash="4,16,ab0f30f9b0f72b01"/>
-<approved hash="4,16,c551520bd205455f"/>
+<approved hash="19,16,4be310731e7c45ec"/>
+<approved hash="4,16,83b91893989d03b7"/>
+<approved hash="19,16,5ff7044f0a4051f8"/>
+<approved hash="4,16,9465035f8351146b"/>
+<approved hash="19,16,4d790f6d01624376"/>
+<approved hash="4,16,98871c719c7f1889"/>
 <approved hash="4,16,df1d5cf7dcf95f13"/>
-<approved hash="5,16,9e14fb0b089835f6"/>
-<approved hash="4,16,062523b3a1b28424"/>
-<approved hash="5,16,e58afb0308a44e5c"/>
-<approved hash="5,16,e2acfb3b0898497e"/>
-<approved hash="4,16,7e8b4461c660fc8a"/>
-<approved hash="5,16,91f2fb0308543ad4"/>
-<approved hash="4,16,0b0338d9bad88902"/>
-<approved hash="5,16,a226fb0b08a409f8"/>
-<approved hash="4,16,3af70f458d44b8f6"/>
+<approved hash="4,16,c8732f2daf23487d"/>
+<approved hash="4,16,cc95284fa8414c9b"/>
+<approved hash="4,16,c551520bd205455f"/>
+<approved hash="4,16,b7b72561a56f37b9"/>
+<approved hash="4,16,c23f59e9d9e74231"/>
+<approved hash="4,16,baa92183a18d3aa7"/>
+<approved hash="4,16,ab0f30f9b0f72b01"/>
+<approved hash="4,16,ae210d1b8d152e2f"/>
 <approved hash="5,16,efcefb7b08d44410"/>
+<approved hash="5,16,e2acfb3b0898497e"/>
+<approved hash="4,16,7a6d4f3bcd3af86c"/>
+<approved hash="5,16,899cfb1b08b8224e"/>
+<approved hash="4,16,17fb2d51af5095fa"/>
 <approved hash="5,16,94d0fb0308903f32"/>
 <approved hash="4,16,754f321db01cf74e"/>
-<approved hash="5,16,b8e2fb0308b41324"/>
+<approved hash="5,16,91f2fb0308543ad4"/>
+<approved hash="5,16,9e14fb0b089835f6"/>
+<approved hash="4,16,0b0338d9bad88902"/>
+<approved hash="4,16,702135f7b7f6f220"/>
+<approved hash="5,16,e58afb0308a44e5c"/>
+<approved hash="4,16,7e8b4461c660fc8a"/>
+<approved hash="4,16,63a9413fc33ee1a8"/>
+<approved hash="4,16,062523b3a1b28424"/>
+<approved hash="5,16,b6befb1b08b41d60"/>
+<approved hash="4,16,12dd10eb92ea90dc"/>
+<approved hash="5,16,a226fb0b08a409f8"/>
+<approved hash="4,16,3af70f458d44b8f6"/>
 <approved hash="5,16,b3c0fb0308b01802"/>
+<approved hash="4,16,2ebf18cd9accacbe"/>
+<approved hash="5,16,b8e2fb0308b41324"/>
 <approved hash="4,16,28911ea79ca6aa90"/>
 <approved hash="5,16,a504fb0b08b80ec6"/>
 <approved hash="4,16,3f1505638762bd14"/>
 <approved hash="4,16,247301898388a672"/>
-<approved hash="5,16,b6befb1b08b41d60"/>
-<approved hash="4,16,2ebf18cd9accacbe"/>
-<approved hash="4,16,63a9413fc33ee1a8"/>
-<approved hash="4,16,7a6d4f3bcd3af86c"/>
-<approved hash="5,16,899cfb1b08b8224e"/>
-<approved hash="4,16,12dd10eb92ea90dc"/>
-<approved hash="4,16,702135f7b7f6f220"/>
-<approved hash="4,16,17fb2d51af5095fa"/>
 </errors>
 </board>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
