@@ -8,8 +8,8 @@
 </settings>
 <grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="13" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,17 +22,17 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="3" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -786,11 +786,11 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="VALUE" x="8.9542" y="-0.2436" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C10" library="passives" package="0402_CAP" value="47nF" x="5.9102" y="7.6152" smashed="yes" rot="R180">
-<attribute name="NAME" x="6.7874" y="8.5942" size="0.6604" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="6.9458" y="8.2474" size="0.6604" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="5.9102" y="9.0122" size="1.016" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 </element>
 <element name="C7" library="passives" package="0402_CAP" value="1nF" x="10.1568" y="1.579" smashed="yes" rot="R270">
-<attribute name="NAME" x="10.8868" y="1.0712" size="0.6604" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
+<attribute name="NAME" x="10.8368" y="1.9912" size="0.6604" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="8.7598" y="1.579" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="C12" library="passives" package="0402_CAP" value="0.1uF" x="9.2278" y="16.4292" smashed="yes" rot="R270">
@@ -869,7 +869,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="VALUE" x="6.043" y="7.67" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="C1" library="passives" package="0402_CAP" value="0.8pF" x="3.844" y="7.66" smashed="yes" rot="R90">
-<attribute name="NAME" x="3.493" y="8.37" size="0.6604" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="3.09" y="8.433" size="0.6604" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="5.241" y="7.66" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="C6" library="passives" package="0402_CAP" value="1nF" x="7.068" y="4.792" smashed="yes" rot="R90">
@@ -909,7 +909,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="VALUE" x="2.757" y="15.09" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="R2" library="passives" package="0402_RES" value="1k" x="0.5" y="15.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="0.869" y="13.45" size="0.6604" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="0.869" y="13.64" size="0.6604" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="1.897" y="15.1" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="R5" library="passives" package="0402_RES" value="10k" x="16.58" y="15.37" smashed="yes" rot="R270">
@@ -921,12 +921,13 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="VALUE" x="15" y="11.963" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="J1" library="connector" package="TC2030-IDC-NL" value="TC2030-JLINK-NL" x="3.26" y="9.65" smashed="yes" rot="R180">
-<attribute name="NAME" x="4.11" y="12.67" size="0.6604" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="3.26" y="13.1425" size="1.016" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 </element>
-<element name="U1" library="chips" package="TDFN-8" value="FM25L04B-DG" x="5.7" y="15.5" rot="R270">
+<element name="U1" library="chips" package="TDFN-8" value="FM25L04B-DG" x="5.7" y="15.5" smashed="yes" rot="R270">
 <attribute name="MOUSER" value="877-FM25L04B-DG" x="5.7" y="15.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIGIKEY" value="FM25L04B-DGRA-ND" x="5.7" y="15.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="5.14" y="12.48" size="0.6604" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="5.7" y="12.1" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 </elements>
 <signals>
