@@ -1,0 +1,4 @@
+[submodule "software/nrf51-pure-gcc-setup"]
+	path = software/nrf51-pure-gcc-setup
+	url = git@github.com:lab11/nrf51-pure-gcc-setup.git
+	branch = master
