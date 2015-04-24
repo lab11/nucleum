@@ -19,10 +19,31 @@ APPLICATION_SRCS += $(TARGET_LOWER).c
 
 USE_SOFTDEVICE = s110
 
-SDK_VERSION = 7
 TEMPLATE_PATH ?= ../../nrf51-pure-gcc-setup/template/
-SDK_PATH ?= $(HOME)/code/nrf51822_sdk/sdk_7/
-SOFTDEVICE ?= $(HOME)/code/nrf51822_softdevice/s110_nrf51822_7.0.0_softdevice.hex
+
+#Define these variables to match your install locations and settings
+#SDK_VERSION = 7
+#SDK_PATH ?= $(HOME)/code/nrf51822_sdk/sdk_7/
+#SOFTDEVICE ?= $(HOME)/code/nrf51822_softdevice/s110_nrf51822_7.0.0_softdevice.hex
+
+ifndef SDK_VERSION
+$(error An SDK_VERSION must be defined. Edit Makefile to define a valid SDK_VERSION)
+endif
+
+ifeq ($(SDK_VERSION),7)
+else ifeq ($(SDK_VERSION),6)
+else
+$(error A valid SDK_VERSION must be defined. Edit Makefile to define a valid SDK_VERSION)
+endif
+
+ifndef SDK_PATH
+$(error An SDK_PATH must be defined. Edit Makefile to define a valid SDK_PATH)
+endif
+
+ifndef SOFTDEVICE 
+$(error A SOFTDEVICE path must be defined. Edit Makefile to define a valid SOFTDEVICE path)
+endif
+
 
 LIBRARY_PATHS += ../../include
 SOURCE_PATHS += ../../source
