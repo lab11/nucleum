@@ -38,7 +38,7 @@ Get a programmer setup
 ======================
 
 Currently we support programming over SWD using a [tag-connect pogo pin header](http://www.tag-connect.com/catalog/6),
-and a ![j-link](https://www.segger.com/jlink-debug-probes.html) programmer.
+and a [j-link](https://www.segger.com/jlink-debug-probes.html) programmer.
 We will soon provide a uart bootloader, however a j-link is still necessary to flash
 the bootloader.
 
@@ -63,9 +63,9 @@ that you downloaded
 
 Flash the example program
 =========================
-To flash the example program you will need the ![nrf51-pure-gcc-setup](http://www.github.com/lab11/nrf51-pure-gcc-setup) 
-to be located in the /software directory. This will happen for you if you clone
-this repo recursively. If this repo is in the correct location then run:
+To flash the example program you will need the [nrf51-pure-gcc-setup](http://www.github.com/lab11/nrf51-pure-gcc-setup) 
+repo to be located in the /software directory. This will happen for you if you cloned
+the Nucleum repo recursively. If this repo is in the correct location then run:
 
 	1. make flash-softdevice 
 
