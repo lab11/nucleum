@@ -31,22 +31,12 @@
 #define RTS_PIN_NUMBER 0
 #define HWFC           false
 
-//#define SPIS_MISO_PIN  29    // SPI MISO signal.
-//#define SPIS_CSN_PIN   1     // SPI CSN signal.
-//#define SPIS_MOSI_PIN  11    // SPI MOSI signal.
-//#define SPIS_SCK_PIN   9     // SPI SCK signal.
-
-#define SPIM0_SCK_PIN       0     /**< SPI clock GPIO pin number. */
-#define SPIM0_MOSI_PIN      30     /**< SPI Master Out Slave In GPIO pin number. */
-#define SPIM0_MISO_PIN      29     /**< SPI Master In Slave Out GPIO pin number. */
-//#define SPIM0_SS_PIN        1u     /**< SPI Slave Select GPIO pin number. */
-
-//#define SPIM1_SCK_PIN       16u     /**< SPI clock GPIO pin number. */
-//#define SPIM1_MOSI_PIN      18u     /**< SPI Master Out Slave In GPIO pin number. */
-//#define SPIM1_MISO_PIN      17u     /**< SPI Master In Slave Out GPIO pin number. */
-//#define SPIM1_SS_PIN        19u     /**< SPI Slave Select GPIO pin number. */
-
-// serialization APPLICATION board
+#define SPI_SCK_PIN     0     /**< SPI clock GPIO pin number. */
+#define SPI_MOSI_PIN    30     /**< SPI Master Out Slave In GPIO pin number. */
+#define SPI_MISO_PIN    29     /**< SPI Master In Slave Out GPIO pin number. */
+#define RV3049_CS		28		
+#define FRAM_HOLD		14
+#define FRAM_CS			15
 
 
 bool platform_init ();
