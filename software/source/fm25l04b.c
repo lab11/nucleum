@@ -5,7 +5,7 @@
 
 void fm25l04b_init() {
 
-	spi_config(SPI_FREQUENCY_FREQUENCY_M1, SPI_CONFIG_ORDER_LsbFirst, SPI_CONFIG_CPOL_ActiveHigh, SPI_CONFIG_CPHA_Leading);
+	spi_config(SPI_FREQUENCY_FREQUENCY_M1, SPI_CONFIG_ORDER_MsbFirst, SPI_CONFIG_CPOL_ActiveHigh, SPI_CONFIG_CPHA_Leading);
 
   /* Set the HOLD_N and WP_N pins to outputs and high */
 	nrf_gpio_cfg_output(FRAM_CS);
@@ -31,7 +31,7 @@ int fm25l04b_read(uint16_t address, uint16_t len, uint8_t *buf)  {
   uint16_t current_address = address;
 
 
-  spi_config(SPI_FREQUENCY_FREQUENCY_M1, SPI_CONFIG_ORDER_LsbFirst, SPI_CONFIG_CPOL_ActiveHigh, SPI_CONFIG_CPHA_Leading);
+  spi_config(SPI_FREQUENCY_FREQUENCY_M1, SPI_CONFIG_ORDER_MsbFirst, SPI_CONFIG_CPOL_ActiveHigh, SPI_CONFIG_CPHA_Leading);
   nrf_gpio_pin_clear(FRAM_CS);
 
   /* Send the READ command and the address to the FRAM */
@@ -61,7 +61,7 @@ fm25l04b_write(uint16_t address, uint16_t len, uint8_t *buf)
 {
   uint16_t i;
 
-  spi_config(SPI_FREQUENCY_FREQUENCY_M1, SPI_CONFIG_ORDER_LsbFirst, SPI_CONFIG_CPOL_ActiveHigh, SPI_CONFIG_CPHA_Leading);
+  spi_config(SPI_FREQUENCY_FREQUENCY_M1, SPI_CONFIG_ORDER_MsbFirst, SPI_CONFIG_CPOL_ActiveHigh, SPI_CONFIG_CPHA_Leading);
 
   nrf_gpio_pin_clear(FRAM_CS);
 

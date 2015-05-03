@@ -48,7 +48,7 @@ int rv3049_read_time(rv3049_time_t* time) {
   	uint8_t buf[8];
   	int i;
 
-  	spi_config(SPI_FREQUENCY_FREQUENCY_M1, SPI_CONFIG_ORDER_LsbFirst, SPI_CONFIG_CPOL_ActiveHigh, SPI_CONFIG_CPHA_Leading);
+  	spi_config(SPI_FREQUENCY_FREQUENCY_M1, SPI_CONFIG_ORDER_MsbFirst, SPI_CONFIG_CPOL_ActiveHigh, SPI_CONFIG_CPHA_Leading);
 
 	nrf_gpio_pin_set(RV3049_CS);
 
@@ -56,7 +56,7 @@ int rv3049_read_time(rv3049_time_t* time) {
   	spi_write(RV3049_SET_READ_BIT(RV3049_PAGE_ADDR_CLOCK));
 
   	// Read a null byte here. Not exactly sure why.
-  	spi_read(&buf[0]);
+  	//spi_read(&buf[0]);
 
   	// Then actually read the clock
   	for (i=0; i<RV3049_READ_LEN_TIME; i++) {
@@ -89,7 +89,7 @@ int rv3049_set_time(rv3049_time_t* time) {
   	buf[5] = time->month;
   	buf[6] = rv3049_binary_to_bcd(time->year - 2000);
 
-  	spi_config(SPI_FREQUENCY_FREQUENCY_M1, SPI_CONFIG_ORDER_LsbFirst, SPI_CONFIG_CPOL_ActiveHigh, SPI_CONFIG_CPHA_Leading);
+  	spi_config(SPI_FREQUENCY_FREQUENCY_M1, SPI_CONFIG_ORDER_MsbFirst, SPI_CONFIG_CPOL_ActiveHigh, SPI_CONFIG_CPHA_Leading);
 
 	nrf_gpio_pin_set(RV3049_CS);
 

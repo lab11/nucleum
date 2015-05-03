@@ -125,13 +125,12 @@ static void advertising_init(void)
     // More manufacturing only stuff that might get added back in
     ble_advdata_manuf_data_t  manuf_specific_data;
 
-    manuf_specific_data.company_identifier = APP_COMPANY_IDENTIFIER;
-
+	manuf_specific_data.company_identifier = APP_COMPANY_IDENTIFIER;
 	uint8_t buf;
 	fm25l04b_read(0x00,1,&buf);
 
-    manuf_specific_data.data.p_data        = (uint8_t *)buf;
-    manuf_specific_data.data.size          = 1;
+     manuf_specific_data.data.p_data        = &buf;
+     manuf_specific_data.data.size          = 1;
 
     // Build and set advertising data.
     memset(&advdata, 0, sizeof(advdata));
@@ -208,16 +207,18 @@ int main(void)
     gap_params_init();
 
 	uint8_t buf = 0x88;
+	uint8_t rbuf;
+
 	fm25l04b_init();
 	fm25l04b_write(0x00,1,&buf);
 
     advertising_init();
 
-
     // Start execution.
     advertising_start();
 
     while (1) {
+			
         power_manage();
     }
 }

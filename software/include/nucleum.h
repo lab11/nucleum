@@ -37,6 +37,7 @@
 #define RV3049_CS		28		
 #define FRAM_HOLD		14
 #define FRAM_CS			15
+#define FRAM_WP			16
 
 
 bool platform_init ();

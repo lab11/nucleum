@@ -24,12 +24,15 @@ void spi_config(uint32_t SPI_Freq, uint8_t SPI_ORDER, uint8_t SPI_CPOL, uint8_t 
 
 void spi_write(uint8_t buf) {
 	//clear the ready event
-	NRF_SPI->EVENTS_READY = 0;
 
 	NRF_SPI->TXD = buf;
 
 	//wait until byte has transmitted
 	while(NRF_SPI->EVENTS_READY == 0);
+
+	uint8_t throw = NRF_SPI->RXD;
+
+	NRF_SPI->EVENTS_READY = 0;
 }
 
 void spi_read(uint8_t* buf) {

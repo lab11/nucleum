@@ -127,8 +127,10 @@ static void advertising_init(void)
     ble_advdata_manuf_data_t  manuf_specific_data;
 	
 	rv3049_read_time(&time);
+	time.hours -= 2000;
+	time.hours <<= 8;
 
-    manuf_specific_data.company_identifier = APP_COMPANY_IDENTIFIER;
+    //manuf_specific_data.company_identifier = APP_COMPANY_IDENTIFIER;
     manuf_specific_data.data.p_data        = (uint8_t *)(&time);
     manuf_specific_data.data.size          = sizeof(time);
 
@@ -206,23 +208,17 @@ int main(void)
 
     gap_params_init();
 
+	rv3049_init();
+
     advertising_init();
 
-	rv3049_init();
 
     // Start execution.
     advertising_start();
 
     while (1) { 
 
-		ble_advdata_manuf_data_t  manuf_specific_data;
-		rv3049_read_time(&time);                                                    
-		manuf_specific_data.company_identifier = APP_COMPANY_IDENTIFIER;            
-	    manuf_specific_data.data.p_data        = (uint8_t *)(&time);                
-	    manuf_specific_data.data.size          = sizeof(time);                      
-	    advdata.p_manuf_specific_data   = &manuf_specific_data;  
-
-        power_manage();
+    	advertising_init();
     }
 }
 
