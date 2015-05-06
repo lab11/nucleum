@@ -1,7 +1,7 @@
 Nucleum
 ====
 
-![Nucleum](https://raw.githubusercontent.com/lab11/nucleum/master/media/top.PNG)
+![Nucleum](https://raw.githubusercontent.com/lab11/nucleum/master/media/top_labeled.PNG)
 
 Nucleum is a ½ inch² drop-in sensor node module designed to enable rapid
 prototyping of Bluetooth Low Energy embedded devices. 
