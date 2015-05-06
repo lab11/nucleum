@@ -1,7 +1,7 @@
 Nucleum
 ====
 
-Nucleum is still a work in progress.
+![Nucleum](https://raw.githubusercontent.com/lab11/nucleum/master/media/top.PNG)
 
 Nucleum is a ½ inch² drop-in sensor node module designed to enable rapid
 prototyping of Bluetooth Low Energy embedded devices. 
@@ -40,10 +40,21 @@ the end of Nucleum represents Nucleum's development at the University of Michiga
 Usage
 -----
 
-A usage guide for the NRF51822 will be added soon.
+To use the NRF51822, you should run bare metal code that is built around
+the Nordic SDK and software BLE stack (known as a softdevice). We provide
+some examples and drivers for the chips on the Nucleum board. For more information
+on getting started please see software/README.md.
+
 
 PCB
 ---
 
-Current progress on the hardware can be found in hardware/nucleum
+Nucleum PCBs are designed to be panelized. 
 
+If you use the battery and regulator on the bottom of the board, you will have
+to populate a 0 Ohm resistor to select regulated voltage. The selection is between 1.8V
+and 3.0V. Position A is 1.8V and position B is 3.0V. The 1.8V selection was included
+because it significantly lowers power draw on the NRF51822, but at this voltage
+the RTC and FRAM may not work. Please see the [hardware pdf](https://github.com/lab11/nucleum/raw/master/hardware/nucleum/rev_a/nucleum.pdf)
+to locate this resistor selector.
+DO NOT populate both position A and B; this will short the battery.
