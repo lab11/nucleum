@@ -50,7 +50,9 @@ on getting started please see software/README.md.
 PCB
 ---
 
-Nucleum PCBs are designed to be panelized. 
+Nucleum PCBs are panelized into 5x8 panels. They are designed to be 
+1mm thick to allow for easy soldering of the castellations on the edge of
+the board.
 
 If you use the battery and regulator on the bottom of the board, you will have
 to populate a 0 Ohm resistor to select regulated voltage. The selection is between 1.8V
