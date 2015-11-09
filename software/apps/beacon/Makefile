@@ -2,11 +2,17 @@ PROJECT_NAME = $(shell basename "$(realpath ./)")
 
 APPLICATION_SRCS = $(notdir $(wildcard ./*.c))
 APPLICATION_SRCS += softdevice_handler.c
+APPLICATION_SRCS += ble_advdata.c
+APPLICATION_SRCS += ble_conn_params.c
 APPLICATION_SRCS += app_timer.c
+APPLICATION_SRCS += ble_srv_common.c
+APPLICATION_SRCS += app_util_platform.c
+APPLICATION_SRCS += nrf_drv_common.c
+APPLICATION_SRCS += nrf_delay.c
 APPLICATION_SRCS += led.c
-APPLICATION_SRCS += ble_advdata.c                                               
-APPLICATION_SRCS += ble_debug_assert_handler.c                                  
-APPLICATION_SRCS += ble_srv_common.c                                            
+
+APPLICATION_SRCS += simple_ble.c
+APPLICATION_SRCS += simple_adv.c
 
 DEVICE = NRF51
 
@@ -22,36 +28,18 @@ APPLICATION_SRCS += $(TARGET_LOWER).c
 
 USE_SOFTDEVICE = s110
 
-TEMPLATE_PATH ?= ../../nrf51-pure-gcc-setup/template/
-
-#Define these variables to match your install locations and settings
-#SDK_VERSION = 7
-#SDK_PATH ?= $(HOME)/Programs/Nordic/sdk/
-#SOFTDEVICE ?= $(HOME)/Programs/Nordic/softdevices/s110/s110_nrf51822_7.0.0_softdevice.hex
-
-ifndef SDK_VERSION
-$(error An SDK_VERSION must be defined. Edit Makefile to define a valid SDK_VERSION)
-endif
-
-ifeq ($(SDK_VERSION),7)
-else ifeq ($(SDK_VERSION),6)
-else
-$(error A valid SDK_VERSION must be defined. Edit Makefile to define a valid SDK_VERSION)
-endif
-
-ifndef SDK_PATH
-$(error An SDK_PATH must be defined. Edit Makefile to define a valid SDK_PATH)
-endif
-
-ifndef SOFTDEVICE 
-$(error A SOFTDEVICE path must be defined. Edit Makefile to define a valid SOFTDEVICE path)
-endif
-
+SDK_VERSION = 9
+NRF_BASE_PATH ?= ../../nrf5x-base/
+TEMPLATE_PATH ?= ../../nrf5x-base/nrf51-pure-gcc-setup/template/
+SOFTDEVICE ?= ../../nrf5x-base/softdevice/s110_nrf51_8.0.0_softdevice.hex
+SDK_PATH ?= ../../nrf5x-base/sdk/nrf51_sdk_9.0.0/
 
 LIBRARY_PATHS += ../../include
 SOURCE_PATHS += ../../source
 
 CFLAGS = -Os
+CFLAGS += $(MFLAGS)
 GDB_PORT_NUMBER = 2331
 
+include $(NRF_BASE_PATH)/Makefile.include
 include $(TEMPLATE_PATH)Makefile
