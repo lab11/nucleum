@@ -1,6 +1,6 @@
 [submodule "software/nrf51-pure-gcc-setup"]
 	path = software/nrf51-pure-gcc-setup
-	url = git@github.com:lab11/nrf51-pure-gcc-setup.git
+	url = https://github.com/lab11/nrf51-pure-gcc-setup.git
 	branch = master
 [submodule "software/nrf5x-base"]
 	path = software/nrf5x-base
