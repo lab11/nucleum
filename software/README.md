@@ -5,7 +5,7 @@ This guide explains how to install the tools necessary to develop for
 the nRF51822.
 
 Install the Toolchain
-=====================
+---------------------
 
 The NRF51822 run an ARM Cortex-M0, therefore the [gcc-arm-embedded](https://launchpad.net/gcc-arm-embedded/+download)
 compiler will be used. Put the binaries for your platform in the bin directory.
@@ -20,7 +20,7 @@ Test that you have the toolchain by running:
 
 
 Get a programmer setup
-======================
+----------------------
 
 Currently we support programming over SWD using a [tag-connect pogo pin header](http://www.tag-connect.com/catalog/6),
 and a [j-link](https://www.segger.com/jlink-debug-probes.html) programmer.
@@ -32,7 +32,7 @@ for your platform.
 
 
 Flash the example program
-=========================
+-------------------------
 To flash the example program on to Nucleum:
 
     make flash 
