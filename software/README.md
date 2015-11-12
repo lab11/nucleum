@@ -1,8 +1,8 @@
-Getting Started on the NRF51822
+Getting Started on the nRF51822
 ===============================
 
 This guide explains how to install the tools necessary to develop for
-the NRF51822.
+the nRF51822.
 
 Install the Toolchain
 =====================
@@ -18,21 +18,6 @@ Test that you have the toolchain by running:
 	
 	arm-none-eabi-gcc --version
 
-Download the Nordic SDK
-=========================
-
-You will need the Nordic SDK which provides libraries for the device peripherals and
-the softdevice.
-
-You will also need the softdevice which is Nordic's BLE software stack. There
-are multiple softdevicesL the S110 is for BLE peripherals, the S120 is for BLE
-centrals, and the S130 supports both. Currently our examples are for the S110.
-
-1. Download the Softdevice. We are currently using [S110v7.1.0](https://www.nordicsemi.com/eng/nordic/download_resource/30082/12/23994448)
-
-2. Download and extract the SDK. Our tools currently support SDK 6 and 7. 
-Our examples are written for [SDK 7.2](http://developer.nordicsemi.com/nRF51_SDK/nRF51_SDK_7.2.0_cf547b5.zip).
-
 
 Get a programmer setup
 ======================
@@ -46,34 +31,14 @@ You should Download and install the [Segger flashing tools](https://www.segger.c
 for your platform.
 
 
-Setup one of the Example Programs
-=================================
-
-To flash one of the example programs you will have to edit the Makefile in 
-the example application. Edit the Makefile as follows:
-
-1. Uncomment and set the SDK_VERSION variable to match the SDK that you
-downloaded (either 6 or 7)
-
-2. Uncomment and set the SDK_PATH to point to the root of your extracted SDK
-
-3. Uncomment and set the SOFTDEVICE variable to point to the softdevice
-that you downloaded
-
-
 Flash the example program
 =========================
-To flash the example program you will need the [nrf51-pure-gcc-setup](http://www.github.com/lab11/nrf51-pure-gcc-setup) 
-repo to be located in the /software directory. This will happen for you if you cloned
-the Nucleum repo recursively. If this repo is in the correct location then run:
+To flash the example program on to Nucleum:
 
-	1. make flash-softdevice 
-
-This programs the softdevice that you downloaded onto Nucleum
-
-	2. make flash 
+    make flash 
 	
-This flashs the example program onto Nucleum
+This will automatically add the softdevice if it is not already
+on the nRF51822.
 
 For a complete set of commands including erasing and debugging, 
 see the nrf51-pure-gcc-setup README.
