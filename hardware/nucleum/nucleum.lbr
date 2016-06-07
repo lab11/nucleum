@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -255,9 +255,9 @@
 <symbol name="NUCLEUM">
 <pin name="VCC" x="-25.4" y="-35.56" length="short" rot="R90"/>
 <pin name="P17" x="-22.86" y="-35.56" length="short" rot="R90"/>
-<pin name="UNUSED1" x="-20.32" y="-35.56" length="short" rot="R90"/>
+<pin name="SWDIO/!RESET@1" x="-20.32" y="-35.56" length="short" rot="R90"/>
 <pin name="SWDCLK" x="-17.78" y="-35.56" length="short" rot="R90"/>
-<pin name="SWDIO/!RESET@1" x="-15.24" y="-35.56" length="short" rot="R90"/>
+<pin name="UNUSED" x="-15.24" y="-35.56" length="short" rot="R90"/>
 <pin name="P21" x="-12.7" y="-35.56" length="short" rot="R90"/>
 <pin name="P22" x="-10.16" y="-35.56" length="short" rot="R90"/>
 <pin name="P23" x="-7.62" y="-35.56" length="short" rot="R90"/>
@@ -374,9 +374,9 @@ Nucleum board.</description>
 <connect gate="G$1" pin="SPI_MOSI/P30" pad="15"/>
 <connect gate="G$1" pin="SPI_SCK/P00" pad="16"/>
 <connect gate="G$1" pin="SWDCLK" pad="4"/>
-<connect gate="G$1" pin="SWDIO/!RESET@1" pad="5"/>
+<connect gate="G$1" pin="SWDIO/!RESET@1" pad="3"/>
 <connect gate="G$1" pin="SWDIO/!RESET@2" pad="30"/>
-<connect gate="G$1" pin="UNUSED1" pad="3"/>
+<connect gate="G$1" pin="UNUSED" pad="5"/>
 <connect gate="G$1" pin="UNUSED2" pad="10"/>
 <connect gate="G$1" pin="UNUSED3" pad="11"/>
 <connect gate="G$1" pin="UNUSED4" pad="12"/>
