@@ -265,8 +265,8 @@
 <pin name="SPI_MISO/P29" x="20.32" y="-7.62" length="short" rot="R180"/>
 <pin name="SPI_MOSI/P30" x="20.32" y="-5.08" length="short" rot="R180"/>
 <pin name="SPI_SCK/P00" x="20.32" y="-2.54" length="short" rot="R180"/>
-<pin name="P01" x="20.32" y="2.54" length="short" rot="R180"/>
-<pin name="P07" x="20.32" y="5.08" length="short" rot="R180"/>
+<pin name="I2C_SCL" x="20.32" y="2.54" length="short" rot="R180"/>
+<pin name="I2C_SDA" x="20.32" y="5.08" length="short" rot="R180"/>
 <pin name="P08" x="20.32" y="7.62" length="short" rot="R180"/>
 <pin name="P09" x="20.32" y="10.16" length="short" rot="R180"/>
 <pin name="P10" x="20.32" y="12.7" length="short" rot="R180"/>
@@ -355,12 +355,12 @@ Nucleum board.</description>
 <connect gate="G$1" pin="BTLDR_RX/P11" pad="22"/>
 <connect gate="G$1" pin="BTLDR_TX/P12" pad="23"/>
 <connect gate="G$1" pin="GND" pad="32"/>
-<connect gate="G$1" pin="P01" pad="17"/>
+<connect gate="G$1" pin="I2C_SCL" pad="17"/>
+<connect gate="G$1" pin="I2C_SDA" pad="18"/>
 <connect gate="G$1" pin="P02/AIN3" pad="25"/>
 <connect gate="G$1" pin="P03/AIN4" pad="26"/>
 <connect gate="G$1" pin="P04/AIN5" pad="27"/>
 <connect gate="G$1" pin="P05/AIN6" pad="28"/>
-<connect gate="G$1" pin="P07" pad="18"/>
 <connect gate="G$1" pin="P08" pad="19"/>
 <connect gate="G$1" pin="P09" pad="20"/>
 <connect gate="G$1" pin="P10" pad="21"/>
