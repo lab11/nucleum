@@ -237,14 +237,15 @@
 <text x="7.874" y="-15.748" size="1.524" layer="97" ratio="12" align="center-right">CARD_INSERTED</text>
 </symbol>
 <symbol name="AA_BAT">
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-17.78" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="P1-" x="-5.08" y="12.7" length="middle" rot="R270"/>
-<pin name="P2+" x="7.62" y="12.7" length="middle" rot="R270"/>
-<pin name="P1+" x="-5.08" y="-22.86" length="middle" rot="R90"/>
-<pin name="P2-" x="7.62" y="-22.86" length="middle" rot="R90"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="P1-" x="-2.54" y="12.7" length="middle" rot="R270"/>
+<pin name="P2+" x="2.54" y="12.7" length="middle" rot="R270"/>
+<pin name="P1+" x="-2.54" y="-12.7" length="middle" rot="R90"/>
+<pin name="P2-" x="2.54" y="-12.7" length="middle" rot="R90"/>
+<text x="-5.08" y="-7.62" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -275,7 +276,8 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="AA_BAT_PACK">
+<deviceset name="AA_BAT_PACK" prefix="J">
+<description>Types of AA Battery Packs</description>
 <gates>
 <gate name="G$1" symbol="AA_BAT" x="0" y="5.08"/>
 </gates>
@@ -866,7 +868,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R2" library="passives" deviceset="RESISTOR" device="0402_RES" value="10K"/>
 <part name="R3" library="passives" deviceset="RESISTOR" device="0402_RES" value="10K"/>
-<part name="U$1" library="connector" deviceset="AA_BAT_PACK" device="SMD"/>
+<part name="J2" library="connector" deviceset="AA_BAT_PACK" device="SMD"/>
 <part name="R1" library="passives" deviceset="RESISTOR" device="0402_RES" value="10K"/>
 </parts>
 <sheets>
@@ -875,16 +877,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="0" y1="48.26" x2="91.44" y2="48.26" width="0.1524" layer="97"/>
 <wire x1="91.44" y1="48.26" x2="91.44" y2="0" width="0.1524" layer="97"/>
 <text x="15.24" y="48.26" size="1.778" layer="97">Micro SD Card Connector</text>
-<text x="2.54" y="175.26" size="1.778" layer="97">NUCLEUM
-AIN and DIO PINS are not multiplexed to each squall header.
-This prevents hardware conflicts between the headers.</text>
 <wire x1="167.64" y1="35.56" x2="167.64" y2="114.3" width="0.1524" layer="97"/>
-<wire x1="167.64" y1="114.3" x2="248.92" y2="114.3" width="0.1524" layer="97"/>
 <wire x1="167.64" y1="114.3" x2="167.64" y2="185.42" width="0.1524" layer="97"/>
 <text x="193.04" y="180.34" size="1.778" layer="97">SQUALL HEADER #1</text>
-<text x="193.04" y="109.22" size="1.778" layer="97">SQUALL_HEADER #2</text>
-<text x="119.38" y="124.46" size="1.778" layer="97">BATTERY</text>
-<text x="119.38" y="86.36" size="1.778" layer="97">TWO AA's</text>
+<text x="121.92" y="116.84" size="1.778" layer="97">BATTERY</text>
+<text x="121.92" y="93.98" size="1.778" layer="97">TWO AA's</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="17.78" y="30.48"/>
@@ -893,13 +890,13 @@ This prevents hardware conflicts between the headers.</text>
 <instance part="GND4" gate="1" x="10.16" y="147.32"/>
 <instance part="GND5" gate="1" x="50.8" y="17.78"/>
 <instance part="GND6" gate="1" x="35.56" y="5.08"/>
-<instance part="GND7" gate="1" x="134.62" y="106.68"/>
+<instance part="GND7" gate="1" x="106.68" y="116.84"/>
 <instance part="J3" gate="G$1" x="205.74" y="152.4"/>
 <instance part="U1" gate="G$1" x="45.72" y="119.38"/>
 <instance part="GND2" gate="1" x="185.42" y="127"/>
 <instance part="R2" gate="G$1" x="63.5" y="33.02" rot="R90"/>
 <instance part="R3" gate="G$1" x="48.26" y="33.02" rot="R90"/>
-<instance part="U$1" gate="G$1" x="99.06" y="109.22"/>
+<instance part="J2" gate="G$1" x="116.84" y="106.68"/>
 <instance part="R1" gate="G$1" x="78.74" y="30.48" rot="R90"/>
 </instances>
 <busses>
@@ -925,15 +922,11 @@ This prevents hardware conflicts between the headers.</text>
 <wire x1="35.56" y1="12.7" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="127" y1="111.76" x2="127" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="127" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="114.3" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="121.92" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="127" y1="114.3" x2="127" y2="137.16" width="0.1524" layer="91"/>
-<junction x="127" y="114.3"/>
-<pinref part="U$1" gate="G$1" pin="P1-"/>
-<wire x1="127" y1="137.16" x2="93.98" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="137.16" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="P1-"/>
+<wire x1="106.68" y1="121.92" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="121.92" x2="114.3" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="GND"/>
@@ -1004,13 +997,9 @@ This prevents hardware conflicts between the headers.</text>
 <junction x="78.74" y="38.1"/>
 </segment>
 <segment>
-<label x="121.92" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
-<wire x1="121.92" y1="114.3" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="109.22" x2="114.3" y2="127" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P2+"/>
-<wire x1="114.3" y1="127" x2="106.68" y2="127" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="127" x2="106.68" y2="121.92" width="0.1524" layer="91"/>
+<label x="119.38" y="129.54" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="P2+"/>
+<wire x1="119.38" y1="129.54" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="VCC"/>
@@ -1200,11 +1189,11 @@ This prevents hardware conflicts between the headers.</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="P1+"/>
-<wire x1="93.98" y1="86.36" x2="93.98" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P2-"/>
-<wire x1="93.98" y1="81.28" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="81.28" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="P1+"/>
+<wire x1="114.3" y1="93.98" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="P2-"/>
+<wire x1="114.3" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="91.44" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -1212,10 +1201,4 @@ This prevents hardware conflicts between the headers.</text>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
