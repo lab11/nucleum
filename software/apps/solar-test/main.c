@@ -16,14 +16,16 @@
 #define TIMER_QUEUE_SIZE 	5
 #define SAMPLE_RATE			APP_TIMER_TICKS(10000, TIMER_PRESCALER)
 
-#define VOLTAGE_PIN 1 
-#define CURRENT_PIN 2 
-#define SWITCH_PIN  3
+#define VOLTAGE_PIN 4 
+#define CURRENT_PIN 3 
+#define CURRENT2_PIN 5 
+#define SWITCH_PIN  23
 
 static void sample(void* p_context);
 static void writeWord(uint32_t* address, uint32_t value);
 static void adcConfigVoltage(void);
 static void adcConfigCurrent(void);
+static void adcConfigCurrent2(void);
 static void configCurrent(void);
 static void configVoltage(void);
 
@@ -39,12 +41,25 @@ static void sample (void* p_context) {
 
 	rv3049_time_t time;
 	rv3049_read_time(&time);
-	
-	configVoltage();
+
+	nrf_gpio_pin_clear(SWITCH_PIN);
+	adcConfigVoltage();
+
+	for(volatile int i = 0; i < 10000; i++);
 	uint32_t voltage = getSample();
 
-	configCurrent();
+	nrf_gpio_pin_set(SWITCH_PIN);
+	adcConfigCurrent();
+
+	for(volatile int i = 0; i < 100000; i++);
+
 	uint32_t current = getSample();
+	adcConfigCurrent2();
+	uint32_t current2 = getSample();
+
+	current = current - current2;
+
+	nrf_gpio_pin_clear(SWITCH_PIN);
 
 	uint32_t currVolt = (current << 16) + (voltage & 0x0000ffff);
 
@@ -106,15 +121,22 @@ static void storageInit(void) {
 
 
 static void adcConfigVoltage(void) {
-	adcConfig(ADC_CONFIG_RES_10bit, ADC_CONFIG_INPSEL_AnalogInputNoPrescaling,  
+	adcConfig(ADC_CONFIG_RES_10bit, ADC_CONFIG_INPSEL_AnalogInputOneThirdPrescaling,  
 						ADC_CONFIG_REFSEL_VBG,                      
 						1 << VOLTAGE_PIN,                                  
 						ADC_CONFIG_EXTREFSEL_None);
 }
 
+static void adcConfigCurrent2(void) {
+	adcConfig(ADC_CONFIG_RES_10bit, ADC_CONFIG_INPSEL_AnalogInputTwoThirdsPrescaling,  
+						ADC_CONFIG_REFSEL_VBG,                      
+						1 << CURRENT2_PIN,                                  
+						ADC_CONFIG_EXTREFSEL_None);
+}
+
 static void adcConfigCurrent(void) {
 
-	adcConfig(ADC_CONFIG_RES_10bit, ADC_CONFIG_INPSEL_AnalogInputNoPrescaling,  
+	adcConfig(ADC_CONFIG_RES_10bit, ADC_CONFIG_INPSEL_AnalogInputTwoThirdsPrescaling,  
 						ADC_CONFIG_REFSEL_VBG,                      
 						1 << CURRENT_PIN,                                  
 						ADC_CONFIG_EXTREFSEL_None);
