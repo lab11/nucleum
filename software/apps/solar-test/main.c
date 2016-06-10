@@ -16,9 +16,8 @@
 #define TIMER_QUEUE_SIZE 	5
 #define SAMPLE_RATE			APP_TIMER_TICKS(10000, TIMER_PRESCALER)
 
-#define VOLTAGE_PIN 4 
-#define CURRENT_PIN 3 
-#define CURRENT2_PIN 5 
+#define HIGH_PIN 	3 
+#define LOW_PIN 	6
 #define SWITCH_PIN  23
 
 static void sample(void* p_context);
@@ -26,8 +25,6 @@ static void writeWord(uint32_t* address, uint32_t value);
 static void adcConfigVoltage(void);
 static void adcConfigCurrent(void);
 static void adcConfigCurrent2(void);
-static void configCurrent(void);
-static void configVoltage(void);
 
 //local variables
 APP_TIMER_DEF(sampleTimer);
@@ -42,22 +39,19 @@ static void sample (void* p_context) {
 	rv3049_time_t time;
 	rv3049_read_time(&time);
 
-	nrf_gpio_pin_clear(SWITCH_PIN);
 	adcConfigVoltage();
-
-	for(volatile int i = 0; i < 10000; i++);
 	uint32_t voltage = getSample();
 
 	nrf_gpio_pin_set(SWITCH_PIN);
 	adcConfigCurrent();
 
-	for(volatile int i = 0; i < 100000; i++);
-
+	for(volatile int i = 0; i < 1000000; i++);
 	uint32_t current = getSample();
+
 	adcConfigCurrent2();
 	uint32_t current2 = getSample();
 
-	current = current - current2;
+	//current = current - current2;
 
 	nrf_gpio_pin_clear(SWITCH_PIN);
 
@@ -123,37 +117,23 @@ static void storageInit(void) {
 static void adcConfigVoltage(void) {
 	adcConfig(ADC_CONFIG_RES_10bit, ADC_CONFIG_INPSEL_AnalogInputOneThirdPrescaling,  
 						ADC_CONFIG_REFSEL_VBG,                      
-						1 << VOLTAGE_PIN,                                  
+						1 << HIGH_PIN,                                  
 						ADC_CONFIG_EXTREFSEL_None);
 }
 
 static void adcConfigCurrent2(void) {
-	adcConfig(ADC_CONFIG_RES_10bit, ADC_CONFIG_INPSEL_AnalogInputTwoThirdsPrescaling,  
+	adcConfig(ADC_CONFIG_RES_10bit, ADC_CONFIG_INPSEL_AnalogInputNoPrescaling,  
 						ADC_CONFIG_REFSEL_VBG,                      
-						1 << CURRENT2_PIN,                                  
+						1 << LOW_PIN,                                  
 						ADC_CONFIG_EXTREFSEL_None);
 }
 
 static void adcConfigCurrent(void) {
 
-	adcConfig(ADC_CONFIG_RES_10bit, ADC_CONFIG_INPSEL_AnalogInputTwoThirdsPrescaling,  
+	adcConfig(ADC_CONFIG_RES_10bit, ADC_CONFIG_INPSEL_AnalogInputNoPrescaling,  
 						ADC_CONFIG_REFSEL_VBG,                      
-						1 << CURRENT_PIN,                                  
+						1 << HIGH_PIN,                                  
 						ADC_CONFIG_EXTREFSEL_None);
-}
-
-static void configVoltage(void) {
-	adcConfigVoltage();
-
-	//set GPIO to low
-	nrf_gpio_pin_clear(SWITCH_PIN);
-}
-
-static void configCurrent(void) {
-	adcConfigCurrent();
-
-	//set GPIO to high
-	nrf_gpio_pin_set(SWITCH_PIN);
 }
 
 int main(void)
