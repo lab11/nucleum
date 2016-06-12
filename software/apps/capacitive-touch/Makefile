@@ -11,8 +11,12 @@ APPLICATION_SRCS += eddystone.c
 APPLICATION_SRCS += simple_adv.c
 APPLICATION_SRCS += simple_timer.c
 APPLICATION_SRCS += multi_adv.c
+APPLICATION_SRCS += nrf_drv_gpiote.c
+APPLICATION_SRCS += app_gpiote.c
+APPLICATION_SRCS += nrf_drv_common.c
 
 LIBRARY_PATHS += ../../include
+LIBRARY_PATHS += .
 SOURCE_PATHS += ../../src
 
 SOFTDEVICE_MODEL = s110
