@@ -20,10 +20,14 @@
 #define OUT_PIN 21
 #define IN_PIN 24
 #define LED 18
+#define LED2 19
 #define SIGNAL 2
+
+#define PIR 5
 
 uint32_t touchCount;
 uint32_t touchTimer = 0;
+uint32_t PIRTimer = 0;
 ble_advdata_manuf_data_t mandata;
 
 // Intervals for advertising and connections
@@ -39,6 +43,21 @@ static simple_ble_config_t ble_config = {
 static ble_uuid_t TEST_SERVICE_UUID = {0xBEAF, BLE_UUID_TYPE_BLE};
 
 void test_touch (void *p_context) {	
+	
+	if(nrf_gpio_pin_read(PIR)) {
+		PIRTimer = 50;
+	} else {
+		if(PIRTimer != 0) {
+			PIRTimer--;
+		}
+	}
+
+	if(PIRTimer) {
+		nrf_gpio_pin_clear(LED2);
+	} else {
+		nrf_gpio_pin_set(LED2);
+	}
+
 	if(!touchTimer) {
 
 		volatile uint32_t i = 0;
@@ -49,7 +68,7 @@ void test_touch (void *p_context) {
 			i++;
 		}
 
-		if(i > 0x70) {
+		if(i > 0x70 && !PIRTimer) {
 			nrf_gpio_pin_clear(LED);
 			nrf_gpio_pin_set(SIGNAL);
 			for(volatile int j = 0; j < 1000; j++);
@@ -95,9 +114,13 @@ int main(void) {
 
 	nrf_gpio_cfg_output(OUT_PIN);
 	nrf_gpio_cfg_input(IN_PIN, NRF_GPIO_PIN_NOPULL);
+	nrf_gpio_cfg_input(PIR, NRF_GPIO_PIN_NOPULL);
 
 	nrf_gpio_cfg_output(LED);
 	nrf_gpio_pin_set(LED);
+
+	nrf_gpio_cfg_output(LED2);
+	nrf_gpio_pin_set(LED2);
 
 	nrf_gpio_cfg_output(SIGNAL);
 	nrf_gpio_pin_clear(SIGNAL);
