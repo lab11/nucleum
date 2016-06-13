@@ -9,10 +9,10 @@ inFile = open(sys.argv[1], "r")
 outFile = open(sys.argv[2], "w")
 
 def toVoltage(adcVoltage):
-	return (adcVoltage/1024.0)*1.2*3;
+	return (adcVoltage/1024.0)*1.2*3*2;
 
 def toCurrent(adcCurrent):
-	return (((adcCurrent/1024.0)*1.2)*(1.0/(2.0/3.0)))/1.17;
+	return (((adcCurrent/1024.0)*1.2)*2)/1.2;
 
 def strToInt(s):
 	i = int(s,16)
@@ -28,7 +28,7 @@ while(line[0:8] != startAddress):
 	line = inFile.readline()
 
 #we got to where we want - process to csv
-outFile.write("Time,Open Voltage,Short Current\n")
+outFile.write("Time,Open Voltage(V),Short Current(A),Estimated Power(W)\n")
 
 #first line
 day = 0;
@@ -62,16 +62,20 @@ while(line):
 				hour = strToInt(words[i][2:4]);
 				min = strToInt(words[i][4:6]);
 				sec = strToInt(words[i][6:8]);
-				outFile.write(str(day) + ":" + 
+				outFile.write(str(6) + "/" + str(day) + " " +
 					  	str(hour) + ":" + 
 						str(min) + ":" + 
 						str(sec) + ","); 
 			else:
 				#this must be measurements
-				voc = strToInt(words[i][0:4]);
-				isc = strToInt(words[i][4:8]);
-				outFile.write("{:.3}".format(toVoltage(voc)) + "," + 
-							 	"{:.3}".format(toCurrent(isc))+"\n");
+				voc = strToInt(words[i][4:8]);
+				isc = strToInt(words[i][0:4]);
+				vocint = toVoltage(voc);
+				iscint = toCurrent(isc);
+				power = vocint*.7*iscint;
+				outFile.write("{:.3}".format(vocint) + "," + 
+							 	"{:.3}".format(iscint)+"," +
+								"{:.3}".format(power)+"\n");
 
 
 	line = inFile.readline()
