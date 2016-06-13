@@ -53,6 +53,12 @@ void test_touch (void *p_context) {
 			PIRTimer--;
 		}
 	}*/
+
+	if(nrf_gpio_pin_read(PIR)) {
+		PIRTimer = 200;
+	}
+
+
 	if(PIRTimer != 0) {
 		PIRTimer--;
 	}
@@ -137,7 +143,7 @@ int main(void) {
 
 	app_gpiote_user_register(&gpiote_user,
 							1 << PIR,
-							0x0,
+							0,
 							pir_interrupt_handler);
 
 	nrf_gpio_cfg_input(PIR, NRF_GPIO_PIN_NOPULL);
