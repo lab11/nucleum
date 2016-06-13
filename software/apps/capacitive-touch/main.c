@@ -76,7 +76,7 @@ void test_touch (void *p_context) {
 		if(i > 0x70 && !PIRTimer) {
 			nrf_gpio_pin_clear(LED);
 			nrf_gpio_pin_set(SIGNAL);
-			for(volatile int j = 0; j < 1000; j++);
+			for(volatile int j = 0; j < 100000; j++);
 			nrf_gpio_pin_clear(SIGNAL);
 			touchTimer = 400;
 		} else {
