@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -137,76 +137,77 @@
 <smd name="1B" x="-9.4789" y="-8.9789" dx="1.2" dy="0.754" layer="16" rot="R270" cream="no"/>
 </package>
 <package name="NUCLEUM">
-<smd name="16" x="0.1" y="-1.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="17" x="0.1" y="1.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="15" x="0.1" y="-2.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="14" x="0.1" y="-3.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="13" x="0.1" y="-4.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="12" x="0.1" y="-5.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="11" x="0.1" y="-6.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="10" x="0.1" y="-7.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="18" x="0.1" y="2.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="19" x="0.1" y="3.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="20" x="0.1" y="4.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="21" x="0.1" y="5.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="22" x="0.1" y="6.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="23" x="0.1" y="7.5" dx="1.5" dy="0.7" layer="1"/>
-<smd name="9" x="-1.4789" y="-9.0789" dx="1.5" dy="0.754" layer="1" rot="R90"/>
-<smd name="24" x="-1.4789" y="9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="8" x="-2.4789" y="-9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="7" x="-3.4789" y="-9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="6" x="-4.4789" y="-9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="5" x="-5.4789" y="-9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="4" x="-6.4789" y="-9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="3" x="-7.4789" y="-9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="2" x="-8.4789" y="-9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="1" x="-9.4789" y="-9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="25" x="-2.4789" y="9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="26" x="-3.4789" y="9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="27" x="-4.4789" y="9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="28" x="-5.4789" y="9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="29" x="-6.4789" y="9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="30" x="-7.4789" y="9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="31" x="-8.4789" y="9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<smd name="32" x="-9.4789" y="9.0789" dx="1.5" dy="0.7" layer="1" rot="R90"/>
-<wire x1="-17.9578" y1="-8.9789" x2="-17.9578" y2="8.9789" width="0.127" layer="21"/>
-<wire x1="-17.9578" y1="8.9789" x2="-10.14615625" y2="8.9789" width="0.127" layer="21"/>
-<wire x1="0" y1="8.9789" x2="-0.897890625" y2="8.9789" width="0.127" layer="21"/>
-<wire x1="0" y1="-8.9789" x2="-0.897890625" y2="-8.9789" width="0.127" layer="21"/>
-<wire x1="-17.9578" y1="-8.9789" x2="-10.14615625" y2="-8.9789" width="0.127" layer="21"/>
-<wire x1="0" y1="0.897890625" x2="0" y2="-0.897890625" width="0.127" layer="21"/>
-<wire x1="0" y1="8.9789" x2="0" y2="8.081009375" width="0.127" layer="21"/>
-<wire x1="0" y1="-8.9789" x2="0" y2="-8.081009375" width="0.127" layer="21"/>
-<wire x1="-17.5" y1="-8.5" x2="-14" y2="-8.5" width="0.127" layer="51"/>
-<wire x1="-14" y1="-8.5" x2="-14" y2="-1.28" width="0.127" layer="51"/>
-<wire x1="-14" y1="-1.28" x2="-17.5" y2="-1.28" width="0.127" layer="51"/>
-<wire x1="-17.5" y1="-1.28" x2="-17.5" y2="-8.5" width="0.127" layer="51"/>
-<text x="-15.5" y="-4.5" size="0.762" layer="51" font="vector" ratio="12" rot="R90" align="bottom-center">ANTENNA</text>
-<wire x1="-10" y1="1" x2="-2" y2="1" width="0.127" layer="51"/>
-<wire x1="-10" y1="-7" x2="-10" y2="1" width="0.127" layer="51"/>
-<wire x1="-2" y1="-7" x2="-10" y2="-7" width="0.127" layer="51"/>
-<wire x1="-2" y1="1" x2="-2" y2="-7" width="0.127" layer="51"/>
-<text x="-5.5" y="-3" size="0.762" layer="51" font="vector" ratio="12" rot="R90" align="bottom-center">NRF51822</text>
-<wire x1="-6" y1="6.5" x2="-6" y2="4" width="0.127" layer="51"/>
-<wire x1="-6" y1="4" x2="-2" y2="4" width="0.127" layer="51"/>
-<wire x1="-2" y1="4" x2="-2" y2="6.5" width="0.127" layer="51"/>
-<wire x1="-2" y1="6.5" x2="-6" y2="6.5" width="0.127" layer="51"/>
-<wire x1="-14" y1="7.5" x2="-14" y2="2.78" width="0.127" layer="51"/>
-<wire x1="-14" y1="2.78" x2="-10" y2="2.78" width="0.127" layer="51"/>
-<wire x1="-10" y1="2.78" x2="-10" y2="7.5" width="0.127" layer="51"/>
-<wire x1="-10" y1="7.5" x2="-14" y2="7.5" width="0.127" layer="51"/>
-<wire x1="-17.5" y1="8.5" x2="-15.5" y2="8.5" width="0.127" layer="51"/>
-<wire x1="-15.5" y1="8.5" x2="-15.5" y2="6.5" width="0.127" layer="51"/>
-<wire x1="-15.5" y1="6.5" x2="-17.5" y2="6.5" width="0.127" layer="51"/>
-<wire x1="-17.5" y1="6.5" x2="-17.5" y2="8.5" width="0.127" layer="51"/>
-<text x="-4" y="5" size="0.762" layer="51" font="vector" ratio="12" align="bottom-center">RTC</text>
-<text x="-12" y="5" size="0.762" layer="51" font="vector" ratio="12" rot="R90" align="center">FRAM</text>
-<text x="-16.5" y="7.5" size="0.508" layer="51" font="vector" ratio="12" rot="R90" align="center">LED</text>
-<text x="0.5" y="0" size="0.762" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center">&gt;NAME</text>
-<hole x="-17.96" y="-0.33" drill="1.4"/>
-<hole x="-17.96" y="1.72" drill="1.4"/>
-<hole x="-12.88" y="0.7" drill="1.4"/>
-<text x="-15.62" y="0.7" size="0.762" layer="51" font="vector" ratio="12" rot="R180" align="center">PROG</text>
+<description>Nucleum Package with through holes for the programmer</description>
+<smd name="16" x="18.06" y="7.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="17" x="18.06" y="10.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="15" x="18.06" y="6.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="14" x="18.06" y="5.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="13" x="18.06" y="4.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="12" x="18.06" y="3.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="11" x="18.06" y="2.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="10" x="18.06" y="1.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="18" x="18.06" y="11.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="19" x="18.06" y="12.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="20" x="18.06" y="13.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="21" x="18.06" y="14.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="22" x="18.06" y="15.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="23" x="18.06" y="16.47" dx="1.5" dy="0.7" layer="1"/>
+<smd name="9" x="16.4811" y="-0.1089" dx="1.5" dy="0.754" layer="1" rot="R90"/>
+<smd name="24" x="16.4811" y="18.0489" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="8" x="15.4811" y="-0.1089" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="7" x="14.4811" y="-0.1089" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="6" x="13.4811" y="-0.1089" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="5" x="12.4811" y="-0.1089" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="4" x="11.4811" y="-0.1089" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="3" x="10.4811" y="-0.1089" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="2" x="9.4811" y="-0.1089" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="1" x="8.4811" y="-0.1089" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="25" x="15.4811" y="18.0489" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="26" x="14.4811" y="18.0489" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="27" x="13.4811" y="18.0489" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="28" x="12.4811" y="18.0489" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="29" x="11.4811" y="18.0489" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="30" x="10.4811" y="18.0489" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="31" x="9.4811" y="18.0489" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="32" x="8.4811" y="18.0489" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<wire x1="0.0022" y1="-0.0089" x2="0.0022" y2="17.9489" width="0.127" layer="21"/>
+<wire x1="0.0022" y1="17.9489" x2="7.81384375" y2="17.9489" width="0.127" layer="21"/>
+<wire x1="17.96" y1="17.9489" x2="17.062109375" y2="17.9489" width="0.127" layer="21"/>
+<wire x1="17.96" y1="-0.0089" x2="17.062109375" y2="-0.0089" width="0.127" layer="21"/>
+<wire x1="0.0022" y1="-0.0089" x2="7.81384375" y2="-0.0089" width="0.127" layer="21"/>
+<wire x1="17.96" y1="9.867890625" x2="17.96" y2="8.072109375" width="0.127" layer="21"/>
+<wire x1="17.96" y1="17.9489" x2="17.96" y2="17.051009375" width="0.127" layer="21"/>
+<wire x1="17.96" y1="-0.0089" x2="17.96" y2="0.888990625" width="0.127" layer="21"/>
+<wire x1="0.46" y1="0.47" x2="3.96" y2="0.47" width="0.127" layer="51"/>
+<wire x1="3.96" y1="0.47" x2="3.96" y2="7.69" width="0.127" layer="51"/>
+<wire x1="3.96" y1="7.69" x2="0.46" y2="7.69" width="0.127" layer="51"/>
+<wire x1="0.46" y1="7.69" x2="0.46" y2="0.47" width="0.127" layer="51"/>
+<text x="2.46" y="4.47" size="0.762" layer="51" font="vector" ratio="12" rot="R90" align="bottom-center">ANTENNA</text>
+<wire x1="7.96" y1="9.97" x2="15.96" y2="9.97" width="0.127" layer="51"/>
+<wire x1="7.96" y1="1.97" x2="7.96" y2="9.97" width="0.127" layer="51"/>
+<wire x1="15.96" y1="1.97" x2="7.96" y2="1.97" width="0.127" layer="51"/>
+<wire x1="15.96" y1="9.97" x2="15.96" y2="1.97" width="0.127" layer="51"/>
+<text x="12.46" y="5.97" size="0.762" layer="51" font="vector" ratio="12" rot="R90" align="bottom-center">NRF51822</text>
+<wire x1="11.96" y1="15.47" x2="11.96" y2="12.97" width="0.127" layer="51"/>
+<wire x1="11.96" y1="12.97" x2="15.96" y2="12.97" width="0.127" layer="51"/>
+<wire x1="15.96" y1="12.97" x2="15.96" y2="15.47" width="0.127" layer="51"/>
+<wire x1="15.96" y1="15.47" x2="11.96" y2="15.47" width="0.127" layer="51"/>
+<wire x1="3.96" y1="16.47" x2="3.96" y2="11.75" width="0.127" layer="51"/>
+<wire x1="3.96" y1="11.75" x2="7.96" y2="11.75" width="0.127" layer="51"/>
+<wire x1="7.96" y1="11.75" x2="7.96" y2="16.47" width="0.127" layer="51"/>
+<wire x1="7.96" y1="16.47" x2="3.96" y2="16.47" width="0.127" layer="51"/>
+<wire x1="0.46" y1="17.47" x2="2.46" y2="17.47" width="0.127" layer="51"/>
+<wire x1="2.46" y1="17.47" x2="2.46" y2="15.47" width="0.127" layer="51"/>
+<wire x1="2.46" y1="15.47" x2="0.46" y2="15.47" width="0.127" layer="51"/>
+<wire x1="0.46" y1="15.47" x2="0.46" y2="17.47" width="0.127" layer="51"/>
+<text x="13.96" y="13.97" size="0.762" layer="51" font="vector" ratio="12" align="bottom-center">RTC</text>
+<text x="5.96" y="13.97" size="0.762" layer="51" font="vector" ratio="12" rot="R90" align="center">FRAM</text>
+<text x="1.46" y="16.47" size="0.508" layer="51" font="vector" ratio="12" rot="R90" align="center">LED</text>
+<text x="18.46" y="8.97" size="0.762" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center">&gt;NAME</text>
+<hole x="0.72" y="8.66" drill="1.6"/>
+<hole x="0.72" y="10.66" drill="1.6"/>
+<hole x="5.8" y="9.64" drill="1.6"/>
+<text x="2.34" y="9.67" size="0.762" layer="51" font="vector" ratio="12" rot="R180" align="center">PROG</text>
 </package>
 </packages>
 <symbols>
