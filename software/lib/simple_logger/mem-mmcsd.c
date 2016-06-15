@@ -40,6 +40,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //*******************************************************
 //This function needs to be called reguarly to detect a new card being inserted so that it can be initialised ready for access.
 
+//0 is low
+//1 is high
+static uint8_t speed = 0;
+
 void ffs_init (void) {
 	FFS_INIT_PINS;
 }
@@ -139,6 +143,7 @@ void ffs_process (void)
 	//(The only state that exits the switch statement above is FFS_PROCESS_WAIT_FOR_CARD_RESET when it completes)
 
 	SPI_BUS_SET_TO_LOW_SPEED;
+	speed = 0;
 
 	ffs_card_ok = 0;						//Default to card not OK
 
@@ -348,6 +353,7 @@ void ffs_process (void)
 
 	//SET BUS TO FULL SPEED FOR SD CARD (25MHz)
 	SPI_BUS_SET_TO_FULL_SPEED_SD; 			//(This must not be done before ACDM41)
+	speed = 1;
 
 
 	goto init_new_ffs_card_init_mmc_done;
@@ -458,6 +464,7 @@ init_new_ffs_card_init_mmc:
 
 	//SET BUS TO FULL SPEED FOR MMC CARD (20MHz)
 	SPI_BUS_SET_TO_FULL_SPEED_MMC; 			//(This must not be done before ACDM41)
+	speed = 1;
 
 init_new_ffs_card_init_mmc_done:
 
@@ -1067,6 +1074,12 @@ ffs_write_sector_from_buffer_exit:
 //****************************************
 BYTE ffs_write_byte (BYTE data)
 {
+	if(speed == 1) {
+		SPI_BUS_SET_TO_FULL_SPEED_SD;
+	} else {
+		SPI_BUS_SET_TO_LOW_SPEED;
+	}
+
 	BYTE data_rx;
 
 	//Send byte
@@ -1117,6 +1130,12 @@ WORD ffs_read_word (void)
 //*****************************************
 BYTE ffs_read_byte (void)
 {
+	if(speed == 1) {
+		SPI_BUS_SET_TO_FULL_SPEED_SD;
+	} else {
+		SPI_BUS_SET_TO_LOW_SPEED;
+	}
+
 	BYTE rxData;
 
 	//Send dummy byte
@@ -1140,6 +1159,12 @@ BYTE ffs_read_byte (void)
 //******************************************************
 BYTE ffs_check_command_response_byte (BYTE mask, BYTE data_requried)
 {
+	if(speed == 1) {
+		SPI_BUS_SET_TO_FULL_SPEED_SD;
+	} else {
+		SPI_BUS_SET_TO_LOW_SPEED;
+	}
+
 	BYTE count;
 
 	//Response can take up to 9 bytes to be returned
