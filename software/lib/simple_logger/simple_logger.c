@@ -134,9 +134,6 @@ uint8_t simple_logger_log_header(const char *format, ...) {
 		va_start(argptr, format);
 		vsnprintf(buffer, buffer_size, format, argptr);
 		va_end(argptr);
-
-		ffs_fputs(buffer, simple_logger_fpointer);
-		ffs_fflush(simple_logger_fpointer);
 		
 		if(simple_logger_fpointer) {
 			ffs_fputs(buffer, simple_logger_fpointer);

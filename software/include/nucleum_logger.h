@@ -41,6 +41,10 @@
 #define FRAM_CS			15
 #define FRAM_WP			16
 
+#define VOLTAGE_SENSE 	4
+#define CURRENT_SENSE	3
+#define SWITCH			10
+#define PGA_CS			9
 
 bool platform_init ();
 
