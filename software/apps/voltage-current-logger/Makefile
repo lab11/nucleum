@@ -22,15 +22,14 @@ APPLICATION_SRCS += adc.c
 APPLICATION_SRCS += spi_master_nucleum.c
 
 LIBRARY_PATHS += ../../include
-LIBRARY_PATHS += ../../lib/simple_logger
 LIBRARY_PATHS += .
 SOURCE_PATHS += ../../src
-SOURCE_PATHS += ../../lib/simple_logger
 SOURCE_PATHS += ../../source
 
 SOFTDEVICE_MODEL = s110
 
 ENABLE_WIRELESS_DFU = 1
+RAM_KB = 32
 
 include ../../include/Makefile.RTC
 

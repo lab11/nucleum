@@ -18,10 +18,8 @@ APPLICATION_SRCS += mem-mmcsd.c
 APPLICATION_SRCS += simple_logger.c
 
 LIBRARY_PATHS += ../../include
-LIBRARY_PATHS += ../../lib/simple_logger
 LIBRARY_PATHS += .
 SOURCE_PATHS += ../../src
-SOURCE_PATHS += ../../lib/simple_logger
 SOURCE_PATHS += ../../source
 
 SOFTDEVICE_MODEL = s110
