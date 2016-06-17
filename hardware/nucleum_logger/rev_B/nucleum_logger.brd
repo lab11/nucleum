@@ -29,13 +29,13 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -46,20 +46,20 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -78,7 +78,7 @@
 <layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
-<layer number="107" name="Crop" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="2" fill="1" visible="no" active="yes"/>
 <layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
@@ -92,7 +92,7 @@
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -713,8 +713,8 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <vertex x="34.8996" y="73.025"/>
 <vertex x="34.8996" y="0"/>
 </polygon>
-<via x="20.5232" y="29.972" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="20.3708" y="27.8638" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="20.2692" y="29.9466" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="20.32" y="27.8638" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="7.7216" y="54.7624" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <contactref element="C1" pad="2"/>
 <contactref element="R4" pad="1"/>
@@ -786,15 +786,11 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="6.4206" y1="58.6486" x2="6.6302" y2="58.6422" width="0.2032" layer="1"/>
 <contactref element="U2" pad="5"/>
 <contactref element="C3" pad="1"/>
-<contactref element="Q1" pad="3"/>
 <wire x1="6.2992" y1="24.0076" x2="6.2992" y2="25.9438" width="0.4064" layer="1"/>
 <wire x1="6.2992" y1="25.9438" x2="6.2588" y2="25.9842" width="0.4064" layer="1"/>
 <wire x1="6.2588" y1="25.9842" x2="6.2588" y2="27.1168" width="0.4064" layer="1"/>
-<wire x1="6.2588" y1="27.1168" x2="5.5626" y2="27.813" width="0.4064" layer="1"/>
-<wire x1="5.5626" y1="27.813" x2="5.5626" y2="33.782" width="0.4064" layer="1"/>
-<wire x1="5.5626" y1="33.782" x2="6.096" y2="34.3154" width="0.4064" layer="1"/>
-<wire x1="6.096" y1="34.3154" x2="8.0342" y2="34.3154" width="0.4064" layer="1"/>
-<wire x1="8.0342" y1="34.3154" x2="8.0772" y2="34.2724" width="0.4064" layer="1"/>
+<wire x1="6.2588" y1="27.1168" x2="5.5626" y2="27.813" width="0.2032" layer="1"/>
+<wire x1="5.5626" y1="27.813" x2="5.5626" y2="33.782" width="0.2032" layer="1"/>
 <wire x1="5.6896" y1="58.6486" x2="5.0038" y2="58.6486" width="0.2032" layer="1"/>
 <wire x1="5.0038" y1="58.6486" x2="4.572" y2="58.2422" width="0.2032" layer="1"/>
 <wire x1="4.572" y1="58.2422" x2="4.5466" y2="34.8234" width="0.2032" layer="1"/>
@@ -809,6 +805,11 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="12.9032" y1="22.86" x2="8.6614" y2="27.1018" width="0.3048" layer="1"/>
 <wire x1="8.6614" y1="27.1018" x2="6.2738" y2="27.1018" width="0.3048" layer="1"/>
 <wire x1="6.2738" y1="27.1018" x2="6.2588" y2="27.1168" width="0.3048" layer="1"/>
+<contactref element="Q1" pad="2"/>
+<wire x1="9.0272" y1="32.1724" x2="9.271" y2="31.9286" width="0.3048" layer="1"/>
+<wire x1="9.271" y1="31.9286" x2="9.271" y2="27.6098" width="0.3048" layer="1"/>
+<wire x1="9.271" y1="27.6098" x2="8.763" y2="27.1018" width="0.3048" layer="1"/>
+<wire x1="8.763" y1="27.1018" x2="8.6614" y2="27.1018" width="0.3048" layer="1"/>
 </signal>
 <signal name="MISO">
 <contactref element="J1" pad="7"/>
@@ -1094,12 +1095,10 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="R2" pad="2"/>
 <contactref element="R3" pad="2"/>
 <contactref element="C1" pad="1"/>
-<contactref element="Q1" pad="2"/>
 <wire x1="10.2466" y1="34.6202" x2="10.2466" y2="33.274" width="0.2032" layer="1"/>
 <wire x1="10.2466" y1="33.274" x2="10.2466" y2="32.2372" width="0.2032" layer="1"/>
 <wire x1="10.2466" y1="32.2372" x2="10.3378" y2="32.146" width="0.2032" layer="1"/>
 <wire x1="10.3752" y1="32.1834" x2="10.3378" y2="32.146" width="0.2032" layer="1"/>
-<wire x1="9.0272" y1="32.1724" x2="10.3114" y2="32.1724" width="0.2032" layer="1"/>
 <wire x1="10.3114" y1="32.1724" x2="10.3378" y2="32.146" width="0.2032" layer="1"/>
 <wire x1="25.908" y1="32.1056" x2="25.908" y2="24.892" width="0.2032" layer="16"/>
 <via x="25.908" y="24.892" extent="1-16" drill="0.3048"/>
@@ -1112,74 +1111,15 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <via x="20.32" y="32.2072" extent="1-16" drill="0.3048"/>
 <wire x1="20.32" y1="32.2072" x2="18.7706" y2="32.2072" width="0.2032" layer="1"/>
 <wire x1="18.7706" y1="32.2072" x2="18.1594" y2="32.2342" width="0.2032" layer="1"/>
+<contactref element="Q1" pad="3"/>
+<wire x1="8.0772" y1="34.2724" x2="8.425" y2="34.6202" width="0.3048" layer="1"/>
+<wire x1="8.425" y1="34.6202" x2="10.2466" y2="34.6202" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <errors>
-<approved hash="1,20,73e80a0e05977c71"/>
-<approved hash="1,20,66680b0e049769f1"/>
-<approved hash="1,20,7de40202039b7c7d"/>
-<approved hash="1,20,f26509030a98f1fe"/>
-<approved hash="1,20,15430625078014e6"/>
-<approved hash="1,20,e2650b030aa9e3cf"/>
-<approved hash="1,20,fe65050304a9ffcf"/>
-<approved hash="1,20,726c190a1b8370e5"/>
-<approved hash="1,20,9f66040004f69f90"/>
-<approved hash="1,20,5e3c055a04835fe5"/>
-<approved hash="1,20,cce702010d94c372"/>
-<approved hash="1,20,e26d0b0b098fe0e9"/>
-<approved hash="1,20,e0ec260a2486e260"/>
-<approved hash="1,20,e43d59db5887e561"/>
-<approved hash="1,20,e63d09db0880e766"/>
-<approved hash="1,20,66670b010b9466f2"/>
-<approved hash="1,20,d26303050083d1e5"/>
-<approved hash="1,20,1263010502a811ce"/>
-<approved hash="1,20,125d033b008011e6"/>
-<approved hash="1,20,e26d0b0b0894e1f2"/>
-<approved hash="1,20,60e3260538ad7e4b"/>
-<approved hash="1,20,7fdc013a01847f62"/>
-<approved hash="1,20,5edc013a01835e65"/>
-<approved hash="1,20,73e41a021c9b757d"/>
-<approved hash="1,20,5e64050204695f0f"/>
-<approved hash="1,20,52e80c0e0c975271"/>
-<approved hash="1,20,95643e023efb959d"/>
-<approved hash="1,20,e0e3e605e66fe089"/>
-<approved hash="1,20,e6630b04f4b819df"/>
-<approved hash="1,20,126303050368120e"/>
-<approved hash="1,20,4ebc03da00804de6"/>
-<approved hash="1,20,70e40e020e6a708c"/>
-<approved hash="1,20,73e40a020d9b747d"/>
-<approved hash="1,20,66fc601a60846662"/>
-<approved hash="1,20,dcef02090397dd71"/>
-<approved hash="1,20,d3e70a0134b5ed53"/>
-<approved hash="1,20,935c023a028193e7"/>
-<approved hash="1,20,ffe50203039bfe7d"/>
-<approved hash="1,20,f26701017fb58cd3"/>
-<approved hash="1,20,e8690b0f0b9ae8fc"/>
-<approved hash="1,20,9ce8020e03969d70"/>
-<approved hash="1,20,e19f08f909b4e0d2"/>
-<approved hash="1,20,70bc065a05837365"/>
-<approved hash="1,20,1ebd05db06801de6"/>
-<approved hash="1,20,679c04fa038260e4"/>
-<approved hash="1,20,12670901088813ee"/>
-<approved hash="1,20,92720914099e92f8"/>
-<approved hash="1,20,9efe001800879e61"/>
-<approved hash="1,20,9de0030603fb9d1d"/>
-<approved hash="1,20,9f60020602f69f90"/>
-<approved hash="1,20,653d0bdb08806666"/>
-<approved hash="2,20,7987fae53cab46b1"/>
-<approved hash="4,1,4d0920a321d84ee0"/>
-<approved hash="4,1,4c99213320ec4e16"/>
-<approved hash="6,1,c927492704c184c1"/>
-<approved hash="6,1,2fabafab1cb29cb2"/>
-<approved hash="6,1,d4fe54fef7db77db"/>
-<approved hash="6,1,2324a325af7f2f7e"/>
-<approved hash="4,1,5e2adfdb99ba99fa"/>
-<approved hash="4,1,dce01e495a5b9b8c"/>
-<approved hash="6,1,96991699b9fc39fc"/>
-<approved hash="6,1,6505e506e91c691f"/>
 <approved hash="1,20,66e0180618916677"/>
-<approved hash="1,20,731c1dfa1c857263"/>
-<approved hash="1,20,e7e75a015a95e773"/>
+<approved hash="1,20,e6dd393b3984e662"/>
+<approved hash="1,20,e0e626002695e073"/>
 <approved hash="1,20,70e6060000b8765e"/>
 <approved hash="1,20,e00366e56781e167"/>
 <approved hash="1,20,e5033ae53b80e466"/>
@@ -1214,6 +1154,41 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <approved hash="1,20,e4e40a02099ae77c"/>
 <approved hash="1,20,61e5270324eb620d"/>
 <approved hash="2,20,af1d2c6544ab3eab"/>
+<approved hash="18,29,5457b235722f944d"/>
+<approved hash="18,29,4603a4e164fb8619"/>
+<approved hash="18,29,1932277aa77a9932"/>
+<approved hash="18,29,67b06df8edf8e7b0"/>
+<approved hash="18,29,bcadfaa606f74ca4"/>
+<approved hash="18,29,a504e2111e1654c3"/>
+<approved hash="18,29,3ffc626e5d1b3f77"/>
+<approved hash="18,29,a4dc6364e36424dc"/>
+<approved hash="18,29,20548ddd0ddca055"/>
+<approved hash="18,29,1824852d052c9825"/>
+<approved hash="18,29,6da99a78dda08e09"/>
+<approved hash="18,29,2e608fe90fe8ae61"/>
+<approved hash="18,29,263087390738a631"/>
+<approved hash="18,29,224883d103d0a249"/>
+<approved hash="18,29,908cb026fb5814cb"/>
+<approved hash="18,29,1a18bb213b209a19"/>
+<approved hash="18,29,243c81c501c4a43d"/>
+<approved hash="18,29,d95e2ee6aee6595e"/>
+<approved hash="18,29,8c0981d101d10c09"/>
+<approved hash="18,29,991637c9c799651e"/>
+<approved hash="18,29,81712f28df2e7cb7"/>
+<approved hash="18,29,3793960a16f5b76c"/>
+<approved hash="18,29,bc7da63526353c7d"/>
+<approved hash="18,29,076b66f2e6fd8764"/>
+<approved hash="18,29,31962962b14b4dc6"/>
+<approved hash="18,29,f3b292bb12b473bd"/>
+<approved hash="18,29,50f886947ac248d7"/>
+<approved hash="18,29,0dae90b710b98da0"/>
+<approved hash="18,29,057f68c6e8c98570"/>
+<approved hash="18,29,0f5b6ea2eead8f54"/>
+<approved hash="18,29,0b436acaeac58b4c"/>
+<approved hash="18,29,09576cdeecd18958"/>
+<approved hash="18,29,f6fb90b310b376fb"/>
+<approved hash="18,29,b7820e964dcfa8a3"/>
+<approved hash="18,29,f0a24dc55120b03f"/>
 <approved hash="6,1,5018d018fc7d7c7d"/>
 <approved hash="6,1,a7872787a49d249d"/>
 </errors>
