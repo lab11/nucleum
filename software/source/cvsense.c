@@ -64,12 +64,25 @@ void cvsense_open_circuit() {
 float cvsense_get_voltage() {
 	uint16_t voltage = cvsense_get_raw_voltage();
 
-	return (voltage/1024.0)*1.2*3*2;
+	float volt = (voltage/1024.0)*1.2*3*2;
+
+	if(volt >= 0) {
+		return volt;
+	} else {
+		return 0;
+	}
 }
 
 float cvsense_get_current() {
 	uint32_t current = cvsense_get_raw_current();
 
-	return ((((current/1024.0)*REFERENCE)*(1.0/SCALING))-VOLTAGE/2.0-GAIN*OFFSET)/-GAIN/RESISTOR+CALIBRATION_OFFSET;
+	
+	float curr = ((((current/1024.0)*REFERENCE)*(1.0/SCALING))-VOLTAGE/2.0-GAIN*OFFSET)/-GAIN/RESISTOR+CALIBRATION_OFFSET;
+
+	if(curr >= 0) {
+		return curr;
+	} else {
+		return 0;
+	}
 }
 
