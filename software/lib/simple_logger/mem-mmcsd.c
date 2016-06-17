@@ -1054,7 +1054,7 @@ ffs_write_sector_from_buffer_exit:
 		}
 
 		//Give 8 clocks for the card to complete the operation
-		//ffs_write_byte(0xff);							//Don't do this - causes errors
+		ffs_write_byte(0xff);							//Don't do this - causes errors
 
 	}  //while ((write_successful == 0) && (ffs_10ms_timer))	
 }
