@@ -27,6 +27,7 @@ SOURCE_PATHS += ../../source
 SOFTDEVICE_MODEL = s110
 
 ENABLE_WIRELESS_DFU = 1
+RAM_KB = 32
 
 NRF_BASE_PATH ?= ../../nrf5x-base
 include $(NRF_BASE_PATH)/make/Makefile

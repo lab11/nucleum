@@ -30,30 +30,39 @@ static simple_ble_config_t ble_config = {
 
 static ble_uuid_t TEST_SERVICE_UUID = {0xBEAF, BLE_UUID_TYPE_BLE};
 
+static uint32_t count = 0;
+
 void log_data(void* p_context) {
-	simple_logger_log("%d,%d,%d,%d\n",1,2,3,4);
+	count++;
+	if(simple_logger_log("%d\n",count)) {
+		led_on(LED_0);
+	} else {
+		led_off(LED_0);
+	}
 }
 
 
 int main(void) {
 
+	platform_init();
+
     // Setup BLE
     simple_ble_init(&ble_config);
 
     // Setup our advertisement
-    simple_adv_service_manuf_data(&TEST_SERVICE_UUID, &mandata);
+    //simple_adv_service_manuf_data(&TEST_SERVICE_UUID, &mandata);
 
 	simple_timer_init();
 
 	platform_init();
 
 	simple_logger_init("t_file1.csv","a");
-	simple_logger_log_header("%s,%s,%s,%s\n","Time","Voc","Isc","Estimated_Power");
+	simple_logger_log_header("%s\n","Count");
 
-	simple_timer_start (100, log_data);
+	simple_timer_start (1000, log_data);
 
     while (1) {
 		simple_logger_update();
-        //power_manage();
+        power_manage();
     }
 }
