@@ -49,17 +49,10 @@ void log_data(void* p_context) {
 	float voltage = cvsense_get_voltage();
 	cv_data.volt = voltage;
 
-	cvsense_short_circuit();
-	for(volatile int i = 0; i < 1000000; i++);
-
 	float current = cvsense_get_current();
-	cvsense_open_circuit();
-
 	cv_data.curr = current;
 
 	cv_data.pow = current*voltage*0.7;
-
-	cvsense_open_circuit();
 
 	simple_logger_log("06/%d %d:%d:%d,%f,%f,%f\n",time.days,time.hours,time.minutes,time.seconds,
 													voltage,current,voltage*current*0.7);
