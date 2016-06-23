@@ -35,6 +35,7 @@
 #define SPI_MOSI_PIN    30     /**< SPI Master Out Slave In GPIO pin number. */
 #define SPI_MISO_PIN    29     /**< SPI Master In Slave Out GPIO pin number. */
 #define SPI_CS_PIN		8
+#define SD_ENABLE_PIN	13		//power gates sd card
 #define CD_PIN			24		//the card detect pin for the SD card
 #define RV3049_CS		28		
 #define FRAM_HOLD		14
