@@ -8,7 +8,7 @@ Nucleum is a ½ inch² drop-in sensor node module designed to enable rapid
 prototyping of Bluetooth Low Energy embedded devices. 
 The core of Nucleum is the NRF51822
 SoC with an Arm Cortex M0 and BLE radio stack. Nucleum also includes an
-antenna, 512 bytes of non-volatile FRAM memory, an RTC, and a tri-color LED.
+antenna, 4 kilo-bytes of non-volatile FRAM memory, an RTC, and a tri-color LED.
 
 Nucleum is designed to have two different usage patterns. First, three sides
 of the device have castellated headers allowing Nucleum to be directly
