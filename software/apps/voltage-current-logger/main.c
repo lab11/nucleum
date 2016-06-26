@@ -31,6 +31,8 @@ typedef struct {
 cv_data_t cv_data;
 uint8_t mdata[1 + sizeof(cv_data_t)];
 
+volatile uint8_t new_data = 0;
+
 // Intervals for advertising and connections
 static simple_ble_config_t ble_config = {
     .platform_id       = 0x00,              // used as 4th octect in device BLE address
@@ -42,20 +44,7 @@ static simple_ble_config_t ble_config = {
 };
 
 void log_data(void* p_context) {
-
-	rv3049_time_t time;
-	rv3049_read_time(&time);
-
-	float voltage = cvsense_get_voltage();
-	cv_data.volt = voltage;
-
-	float current = cvsense_get_current();
-	cv_data.curr = current;
-
-	cv_data.pow = current*voltage*0.7;
-
-	simple_logger_log("06/%d %d:%d:%d,%f,%f,%f\n",time.days,time.hours,time.minutes,time.seconds,
-													voltage,current,voltage*current*0.7);
+	new_data = 1;
 }
 
 static void adv_config_eddystone () {
@@ -74,6 +63,27 @@ static void adv_config_data() {
 	mandata.data.size = 1 + sizeof(cv_data_t);
 		
 	simple_adv_manuf_data(&mandata);
+}
+
+static void blink_red() {
+	for(uint8_t i = 0; i < 25; i++) {
+		led_on(LED_0);
+		led_off(LED_0);
+	}
+}
+
+static void blink_blue() {
+	for(uint8_t i = 0; i < 50; i++) {
+		led_on(LED_1);
+		led_off(LED_1);
+	}
+}
+
+static void blink_green() {
+	for(uint8_t i = 0; i < 50; i++) {
+		led_on(LED_2);
+		led_off(LED_2);
+	}
 }
 
 int main(void) {
@@ -98,12 +108,36 @@ int main(void) {
 	simple_logger_log_header("%s,%s,%s,%s\n","Time","Voc","Isc","Estimated_Power");
 
 	//start the timer
-	simple_timer_start (10000, log_data);
+	simple_timer_start (1000, log_data);
 
 	multi_adv_start();
 
     while (1) {
 		simple_logger_update();
         //power_manage();
+
+		if(new_data) {
+
+			rv3049_time_t time;
+			rv3049_read_time(&time);
+
+			float voltage = cvsense_get_voltage();
+			cv_data.volt = voltage;
+
+			float current = cvsense_get_current();
+			cv_data.curr = current;
+
+			cv_data.pow = current*voltage*0.7;
+
+			blink_blue();
+			if(simple_logger_log("06/%d %d:%d:%d,%f,%f,%f\n",time.days,time.hours,time.minutes,time.seconds,
+																voltage,current,voltage*current*0.7)) {
+				blink_red();
+			} else {
+				blink_green();
+			}
+
+			new_data = 0;
+		}
     }
 }
