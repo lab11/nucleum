@@ -66,21 +66,21 @@ static void adv_config_data() {
 }
 
 static void blink_red() {
-	for(uint8_t i = 0; i < 25; i++) {
+	for(uint8_t i = 0; i < 200; i++) {
 		led_on(LED_0);
 		led_off(LED_0);
 	}
 }
 
 static void blink_blue() {
-	for(uint8_t i = 0; i < 50; i++) {
+	for(uint8_t i = 0; i < 200; i++) {
 		led_on(LED_1);
 		led_off(LED_1);
 	}
 }
 
 static void blink_green() {
-	for(uint8_t i = 0; i < 50; i++) {
+	for(uint8_t i = 0; i < 200; i++) {
 		led_on(LED_2);
 		led_off(LED_2);
 	}
@@ -108,14 +108,12 @@ int main(void) {
 	simple_logger_log_header("%s,%s,%s,%s\n","Time","Voc","Isc","Estimated_Power");
 
 	//start the timer
-	simple_timer_start (1000, log_data);
+	simple_timer_start (10000, log_data);
 
 	multi_adv_start();
 
     while (1) {
-		simple_logger_update();
         //power_manage();
-
 		if(new_data) {
 
 			rv3049_time_t time;

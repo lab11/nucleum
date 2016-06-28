@@ -11,11 +11,12 @@ APPLICATION_SRCS += eddystone.c
 APPLICATION_SRCS += simple_adv.c
 APPLICATION_SRCS += simple_timer.c
 APPLICATION_SRCS += multi_adv.c
-APPLICATION_SRCS += mem-ffs.c
 APPLICATION_SRCS += nucleum.c
 APPLICATION_SRCS += led.c
-APPLICATION_SRCS += mem-mmcsd.c
 APPLICATION_SRCS += simple_logger.c
+APPLICATION_SRCS += ff.c
+APPLICATION_SRCS += mmc_nrf.c
+
 
 LIBRARY_PATHS += ../../include
 LIBRARY_PATHS += .
