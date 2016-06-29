@@ -5,3 +5,4 @@
 [submodule "software/nrf5x-base"]
 	path = software/nrf5x-base
 	url = https://github.com/lab11/nrf5x-base
+	branch = master
