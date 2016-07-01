@@ -113,7 +113,7 @@ int main(void) {
 	multi_adv_start();
 
     while (1) {
-        //power_manage();
+
 		if(new_data) {
 
 			rv3049_time_t time;
@@ -137,5 +137,7 @@ int main(void) {
 
 			new_data = 0;
 		}
+
+        power_manage();
     }
 }
