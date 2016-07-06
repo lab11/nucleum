@@ -128,7 +128,7 @@ int main(void) {
 			cv_data.pow = current*voltage*0.7;
 
 			blink_blue();
-			if(simple_logger_log("06/%d %d:%d:%d,%f,%f,%f\n",time.days,time.hours,time.minutes,time.seconds,
+			if(simple_logger_log("%02d/%d %d:%d:%d,%f,%f,%f\n",time.month,time.days,time.hours,time.minutes,time.seconds,
 																voltage,current,voltage*current*0.7)) {
 				blink_red();
 			} else {
