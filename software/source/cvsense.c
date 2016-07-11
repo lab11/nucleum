@@ -30,6 +30,14 @@ static void sense_vcc() {
 
 }
 
+static void disable_chip() { 
+	spi_config(SPI_FREQUENCY_FREQUENCY_M1, SPI_CONFIG_ORDER_LsbFirst, SPI_CONFIG_CPOL_ActiveHigh, SPI_CONFIG_CPHA_Leading);
+
+	nrf_gpio_pin_clear(PGA_CS);
+	spi_write(0x98);
+	nrf_gpio_pin_set(PGA_CS);
+}
+
 static uint8_t config_chip() {
 
 	//set the gains and stuff over spi
@@ -56,6 +64,7 @@ uint8_t cvsense_init() {
 	nrf_gpio_pin_set(PGA_CS);
 
 	config_chip();
+	disable_chip();
 	sense_vcc();
 
 	return 0;
@@ -77,8 +86,10 @@ uint16_t cvsense_get_raw_current() {
                          ADC_CONFIG_REFSEL_VBG,                                  
                          1 << CURRENT_SENSE,                                          
                          ADC_CONFIG_EXTREFSEL_None);
-	 return getSample();
 
+	disable_chip();
+
+	return getSample();
 }
 
 void cvsense_short_circuit() {
