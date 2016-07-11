@@ -116,6 +116,7 @@ int main(void) {
 
 		if(new_data) {
 
+			NRF_SPI1->ENABLE = (SPI_ENABLE_ENABLE_Enabled << SPI_ENABLE_ENABLE_Pos);
 			rv3049_time_t time;
 			rv3049_read_time(&time);
 
@@ -136,8 +137,9 @@ int main(void) {
 			}
 
 			new_data = 0;
+			NRF_SPI1->ENABLE = (SPI_ENABLE_ENABLE_Disabled << SPI_ENABLE_ENABLE_Pos);
 		}
-
+		
         power_manage();
     }
 }
