@@ -36,6 +36,8 @@ static void disable_chip() {
 	nrf_gpio_pin_clear(PGA_CS);
 	spi_write(0x98);
 	nrf_gpio_pin_set(PGA_CS);
+
+	for(volatile int j = 0; j < 1000; j++);
 }
 
 static uint8_t config_chip() {
@@ -53,6 +55,8 @@ static uint8_t config_chip() {
 	spi_write(0x03);
 	nrf_gpio_pin_set(PGA_CS);
 
+	for(volatile int j = 0; j < 1000; j++);
+
 	return 0;
 }
 
@@ -64,8 +68,9 @@ uint8_t cvsense_init() {
 	nrf_gpio_pin_set(PGA_CS);
 
 	config_chip();
-	disable_chip();
 	sense_vcc();
+
+	disable_chip();
 
 	return 0;
 }
@@ -87,9 +92,13 @@ uint16_t cvsense_get_raw_current() {
                          1 << CURRENT_SENSE,                                          
                          ADC_CONFIG_EXTREFSEL_None);
 
+	uint16_t curr = getSample();
+
+	for(volatile int j = 0; j < 1000; j++);
+
 	disable_chip();
 
-	return getSample();
+	return curr;
 }
 
 void cvsense_short_circuit() {
