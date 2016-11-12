@@ -1,7 +1,12 @@
-Capacitive Touch
-====================
+Log Current and Votlage Measurements with Nucleum Logger
+========================================================
 
-This app acts as a capacitive touch sensor. It is currently running
-on the door in lab to make the door hand touch sensitive for auto unlock.
+According to the creator:
 
-There is also an eagle schematic for the nucleum breakout board on the door.
+> Yeah. You need to make flash
+> Updates the time
+> Order is
+> - Insert battery
+> - Make flash
+> - Insert sd card
+> - Deploy
