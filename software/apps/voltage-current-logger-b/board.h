@@ -1,5 +1,5 @@
 #ifndef BOARD_H
-#define BORAD_H
+#define BOARD_H
 
 #include "nucleum_logger_b.h"
 
