@@ -46,7 +46,6 @@ uint16_t cvsense_get_raw_voltage() {
 }
 
 uint16_t cvsense_get_raw_current() {
-	config_chip();
 
 	adcConfig(ADC_CONFIG_RES_10bit, ADC_CONFIG_INPSEL_AnalogInputOneThirdPrescaling,
                          ADC_CONFIG_REFSEL_VBG,
@@ -57,7 +56,6 @@ uint16_t cvsense_get_raw_current() {
 
 	for(volatile int j = 0; j < 1000; j++);
 
-	disable_chip();
 
 	return curr;
 }
@@ -86,10 +84,12 @@ float cvsense_get_voltage() {
 
 float cvsense_get_current() {
 	cvsense_short_circuit();
+	config_chip();
 
 	for(volatile int i = 0; i < 1000000; i++);
 	uint32_t current = cvsense_get_raw_current();
 
+	disable_chip();
 	cvsense_open_circuit();
 
 	float curr = ((((current/1024.0)*REFERENCE)*(1.0/SCALING)))/GAIN/RESISTOR;
