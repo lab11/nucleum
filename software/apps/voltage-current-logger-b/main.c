@@ -38,7 +38,7 @@ static simple_ble_config_t ble_config = {
     .platform_id       = 0x00,              // used as 4th octect in device BLE address
     .device_id         = DEVICE_ID_DEFAULT,
     .adv_name          = "Solar",       // used in advertisements if there is room
-    .adv_interval      = MSEC_TO_UNITS(500, UNIT_0_625_MS),
+    .adv_interval      = MSEC_TO_UNITS(3000, UNIT_0_625_MS),
     .min_conn_interval = MSEC_TO_UNITS(500, UNIT_1_25_MS),
     .max_conn_interval = MSEC_TO_UNITS(1000, UNIT_1_25_MS)
 };
@@ -61,7 +61,7 @@ static void adv_config_data() {
 	mandata.company_identifier = UMICH_COMPANY_IDENTIFIER;
 	mandata.data.p_data = mdata;
 	mandata.data.size = 1 + sizeof(cv_data_t);
-		
+
 	simple_adv_manuf_data(&mandata);
 }
 
@@ -87,7 +87,7 @@ static void blink_green() {
 }
 
 int main(void) {
-	
+
 	//initalize peripherals
 	cvsense_init();
 	rv3049_init();
@@ -139,7 +139,7 @@ int main(void) {
 			new_data = 0;
 			NRF_SPI1->ENABLE = (SPI_ENABLE_ENABLE_Disabled << SPI_ENABLE_ENABLE_Pos);
 		}
-		
+
         power_manage();
     }
 }
