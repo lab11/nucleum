@@ -47,6 +47,7 @@ uint16_t cvsense_get_raw_voltage() {
 }
 
 uint16_t cvsense_get_raw_current() {
+    config_chip();
 
 //	for(volatile int j = 0; j < 4000000; j++);
 
