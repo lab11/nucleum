@@ -4,7 +4,10 @@
 #include "nucleum_logger_b.h"
 #include "cvsense.h"
 
-#define RESISTOR 0.07
+//The actual value of the resistor is .06
+//.0725 is a value derived from a guess-and-check calibration
+//The boards have an additional systematic resistance in their measurement circuit
+#define RESISTOR 0.0725
 #define SCALING (1.0/3.0)
 //the voltage divider values
 //low_res/(low_res+high_res)
